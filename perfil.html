@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil do Usuário</title>
+
+  <link rel="stylesheet" href="ChallengeSwift/css/perfil.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Ícones Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+<body>
+
+  <!-- Header com menu hamburguer e busca -->
+  <nav class="navbar navbar-light bg-light px-3">
+    <button class="btn" type="button">
+      <i class="bi bi-list" style="font-size: 1.5rem;"></i>
+    </button>
+    <form class="d-flex flex-grow-1 mx-2">
+      <input class="form-control rounded-5 " type="search" placeholder="Pesquisar..." aria-label="Pesquisar">
+    </form>
+
+    <!--
+    icones-->
+    <div class="d-flex align-center gap-3">
+      <img class="img-nav" src="components/icons/notifications-outline.svg" alt="icon-notification">
+      <img class="img-nav" src="components/icons/help-circle-outline.svg" alt="icon-info">
+      <img class="img-nav-profile" src="components/icons/profile_icon.png" alt="icon-profile">
+    </div>
+  </nav>
+
+  <!-- Foto do perfil -->
+  <div class="text-center m-4 box-profile">
+    <img src="" class="profile-pic" alt="Foto de Perfil">
+    <div>
+      <button class="btn btn-link">ALTERAR FOTO</button>
+    </div>
+  </div>
+
+  <!-- Abas de navegação -->
+  <div class="container mt-3">
+    <ul class="nav nav-tabs justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link active" data-bs-toggle="tab" href="#perfil">Perfil</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#formacao">Formação</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#config">Configuração</a>
+      </li>
+    </ul>
+
+    <!-- Conteúdo das abas -->
+    <div class="tab-content container-form p-3 border border-top-0 rounded-bottom">
+      <!-- Aba Perfil -->
+      <div class="tab-pane fade show active" id="perfil">
+        <form>
+          <div class="mb-3">
+            <label class="form-label">Nome</label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Cargo</label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">E-mail</label>
+            <input type="email" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Alterar senha</label>
+            <input type="password" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Número de telefone</label>
+            <input type="tel" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Equipe</label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Localidade</label>
+            <input type="text" class="form-control">
+          </div>
+
+          
+
+          <div class="text-end">
+            <button type="submit" class="btn btn-salvar">Salvar</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="tab-pane fade" id="formacao">
+        <p>Conteúdo da aba Formação.</p>
+      </div>
+
+      <div class="tab-pane fade" id="config">
+        <p>Conteúdo da aba Configuração.</p>
+      </div>
+    </div>
+  </div>
+
+   
+  <!-- Rodapé fixo -->
+  <div class="footer-nav">
+    <div class="d-flex justify-content-around py-2">
+      <figure class="texto-com-imagem">
+        <a href="#" class="nav-link">
+          <img class="img-courses-icon" src="components/icons/courses_button.png" alt="cursos-icon">Cursos
+        </a>
+      </figure>
+      <figure class="texto-com-imagem">
+        <a href="#" class="nav-link">
+        <img class="img-icon-desafios" src="components/icons/challenge_icon.png" alt="icon-desafios"></i>Desafios
+      </a>
+      </figure>
+      
+
+    <figure class="texto-com-imagem">
+          <a href="#" class="nav-link home">
+            <img class="img-swfit-icon" src="ChallengeSwift/img/swift-logo.png" 
+            alt="icone-swifit">Home
+          </a>
+     </figure>
+
+    <figure class="texto-com-imagem">
+      <a href="#" class="nav-link">
+        <img class="img-icon-ranking" src="components/icons/ranking_icon.png" alt="icon-ranking">Ranking
+      </a>
+    </figure>
+      
+    <figure class="texto-com-imagem">
+      <a href="#" class="nav-link">
+        <img class="img-icon-recompensas" src="components/icons/rewards_button - Copia.png" alt="icon-recompensas">Recompensas
+      </a>
+    </figure>
+      
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
