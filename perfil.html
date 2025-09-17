@@ -23,8 +23,7 @@
       <input class="form-control rounded-5 " type="search" placeholder="Pesquisar..." aria-label="Pesquisar">
     </form>
 
-    <!--
-    icones-->
+    <!-- icones -->
     <div class="d-flex align-center gap-3">
       <img class="img-nav" src="components/icons/notifications-outline.svg" alt="icon-notification">
       <img class="img-nav" src="components/icons/help-circle-outline.svg" alt="icon-info">
@@ -87,26 +86,155 @@
             <label class="form-label">Localidade</label>
             <input type="text" class="form-control">
           </div>
-
-          
-
           <div class="text-end">
             <button type="submit" class="btn btn-salvar">Salvar</button>
           </div>
         </form>
       </div>
 
+      <!-- Aba Formação -->
       <div class="tab-pane fade" id="formacao">
-        <p>Conteúdo da aba Formação.</p>
+        <form>
+          <div class="mb-3">
+            <label class="form-label">Formação acadêmica</label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Instituição de ensino</label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Curso</label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label class="form-label">Data de início</label>
+              <div class="d-flex gap-2">
+                <select class="form-select">
+                  <option selected>Mês</option>
+                  <option>Janeiro</option>
+                  <option>Fevereiro</option>
+                  <option>Março</option>
+                </select>
+                <select class="form-select">
+                  <option selected>Ano</option>
+                  <option>2025</option>
+                  <option>2024</option>
+                  <option>2023</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Data de término (ou prevista)</label>
+              <div class="d-flex gap-2">
+                <select class="form-select">
+                  <option selected>Mês</option>
+                  <option>Janeiro</option>
+                  <option>Fevereiro</option>
+                  <option>Março</option>
+                </select>
+                <select class="form-select">
+                  <option selected>Ano</option>
+                  <option>2025</option>
+                  <option>2024</option>
+                  <option>2023</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Cursos extracurriculares</label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Sobre</label>
+            <textarea class="form-control" rows="3"></textarea>
+          </div>
+          <div class="text-end">
+            <button type="submit" class="btn btn-salvar">Salvar</button>
+          </div>
+        </form>
       </div>
 
+      <!-- Aba Configuração -->
       <div class="tab-pane fade" id="config">
-        <p>Conteúdo da aba Configuração.</p>
+        <form>
+          <!-- Tema -->
+          <div class="mb-3">
+            <label class="form-label d-block">Tema</label>
+            <div class="d-flex gap-3">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="tema" id="claro" checked>
+                <label class="form-check-label" for="claro">Claro</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="tema" id="escuro">
+                <label class="form-check-label" for="escuro">Escuro</label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Preferências -->
+          <div class="mb-3">
+            <label class="form-label d-block">Preferências</label>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" id="efeitos">
+                  <label class="form-check-label" for="efeitos">Efeitos sonoros</label>
+                </div>
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" id="recomendacoes">
+                  <label class="form-check-label" for="recomendacoes">Recomendações de cursos</label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" id="vibracao">
+                  <label class="form-check-label" for="vibracao">Vibração</label>
+                </div>
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" id="notificacoes">
+                  <label class="form-check-label" for="notificacoes">Notificações diárias</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Idioma -->
+          <div class="mb-3">
+            <label class="form-label">Idioma</label>
+            <select class="form-select">
+              <option selected>Selecionar</option>
+              <option value="pt">Português</option>
+              <option value="en">Inglês</option>
+              <option value="es">Espanhol</option>
+            </select>
+          </div>
+
+          <!-- Suporte -->
+          <div class="mb-3">
+            <label class="form-label">Suporte</label>
+            <div class="input-group mb-2">
+              <span class="input-group-text"><i class="bi bi-headset"></i></span>
+              <input type="text" class="form-control" value="" placeholder="Central de ajuda">
+            </div>
+            <div class="input-group">
+              <span class="input-group-text"><i class="bi bi-chat-dots"></i></span>
+              <input type="text" class="form-control" value="" placeholder="Ouvidoria">
+            </div>
+          </div>
+
+          <!-- Botão -->
+          <div class="text-end">
+            <button type="submit" class="btn btn-salvar">Salvar</button>
+          </div>
+        </form>
       </div>
     </div>
   </div>
 
-   
   <!-- Rodapé fixo -->
   <div class="footer-nav">
     <div class="d-flex justify-content-around py-2">
@@ -117,32 +245,25 @@
       </figure>
       <figure class="texto-com-imagem">
         <a href="#" class="nav-link">
-        <img class="img-icon-desafios" src="components/icons/challenge_icon.png" alt="icon-desafios"></i>Desafios
-      </a>
+          <img class="img-icon-desafios" src="components/icons/challenge_icon.png" alt="icon-desafios">Desafios
+        </a>
       </figure>
-      
-
-    <figure class="texto-com-imagem">
-          <a href="#" class="nav-link home">
-            <img class="img-swfit-icon" src="components/img/logo_swift.png" 
-            alt="icone-swifit">Home
-          </a>
-     </figure>
-
-    <figure class="texto-com-imagem">
-      <a href="#" class="nav-link">
-        <img class="img-icon-ranking" src="components/icons/ranking_icon.png" alt="icon-ranking">Ranking
-      </a>
-    </figure>
-      
-    <figure class="texto-com-imagem">
-      <a href="#" class="nav-link">
-        <img class="img-icon-recompensas" src="components/icons/rewards_button - Copia.png" alt="icon-recompensas">Recompensas
-      </a>
-    </figure>
-      
+      <figure class="texto-com-imagem">
+        <a href="#" class="nav-link home">
+          <img class="img-swfit-icon" src="components/img/logo_swift.png" alt="icone-swifit">Home
+        </a>
+      </figure>
+      <figure class="texto-com-imagem">
+        <a href="#" class="nav-link">
+          <img class="img-icon-ranking" src="components/icons/ranking_icon.png" alt="icon-ranking">Ranking
+        </a>
+      </figure>
+      <figure class="texto-com-imagem">
+        <a href="#" class="nav-link">
+          <img class="img-icon-recompensas" src="components/icons/rewards_button - Copia.png" alt="icon-recompensas">Recompensas
+        </a>
+      </figure>
     </div>
-    
   </div>
 
   <!-- Bootstrap JS -->
