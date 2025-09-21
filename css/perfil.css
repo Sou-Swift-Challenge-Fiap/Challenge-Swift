@@ -6,6 +6,7 @@
       --cor-borda: #ccc;
       --cor-texto: #000;
       --cor-home: #ff4500; /* cor do botão Home no rodapé */
+      --cor-menu-web: #DC4405;
 
       /* Tamanhos */
       --tam-foto: 120px;
@@ -142,3 +143,67 @@
       width: 25px; /* tamanho da imagem */
       height: auto;
     }
+
+    
+.menu_web{
+  background-color: var(--cor-menu-web);
+}
+
+.banner-container {
+  position: relative; /* cria área de referência */
+  width: 100%;
+  height: 300px; /* altura do banner */
+  overflow: hidden; /* corta excessos */
+  z-index: 0;
+}
+
+
+/* faixa preta atrás do banner */
+.faixa-preta {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0%;                  /* quanto menor, mais pra cima (ex: 0%, 10%, 20%) */
+  height: 160px;             /* altura da faixa preta */
+  background: black;
+  z-index: 1;
+}
+
+/* imagem do banner sempre por cima */
+.banner-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: block;
+  width: 80%;
+  height: 100%;
+  object-fit: cover;     /* garante que a imagem preencha sem distorcer */
+  z-index: 2;
+  border-radius: 3%;
+}
+
+
+    @media (min-width: 768px) {
+  .box-profile {
+    margin-top: -60px; /* sobe a foto do perfil sobre o card */
+  }
+
+  .container-form {
+    background: #f9f9f9;
+    border-radius: 10px;
+  }
+
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  /* oculta rodapé fixo no desktop */
+  .footer-nav{
+    display: none;
+  }
+
+}
