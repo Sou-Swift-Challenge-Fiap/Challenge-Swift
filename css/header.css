@@ -1,0 +1,160 @@
+header {
+  background-color: #DC4405;
+  display: flex;
+  justify-content: space-between;
+}
+
+ul, li {
+    list-style: none;
+}
+
+.logo img {
+    padding: 2%;
+    width: 5%;
+    height: auto;
+}
+
+.search_bar {
+
+}
+
+.buttons ul{
+    display: flex;
+    gap: 50px;
+}
+
+.button_cursos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+}
+
+.button_cursos img {
+    width: 50%;
+    height: auto;
+}
+
+.button_cursos p {
+    margin: 0;
+}
+
+.button_desafios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+}
+
+.button_desafios img {
+    width: 40%;
+    height: auto;
+}
+
+.button_desafios p {
+    margin: 0;
+}
+
+.button_ranking {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+}
+
+.button_ranking img {
+    width: 40%;
+    height: auto;
+}
+
+.button_ranking p {
+    margin: 0;
+}
+
+.button_recompensas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+}
+
+.button_recompensas img {
+    width: 25%;
+    height: auto;
+}
+
+.button_recompensas p {
+    margin: 0;
+}
+
+.button_notificacoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+}
+
+.button_notificacoes img {
+    width: 28%;
+    height: auto;
+}
+
+.button_notificacoes p {
+    margin: 0;
+}
+
+.button_perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+}
+
+.button_perfil img {
+    width: 53%;
+    height: auto;
+}
+
+.button_perfil p {
+    margin: 0;
+}
+
+.button_equipe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+}
+
+.button_equipe img {
+    width: 60%;
+    height: auto;
+}
+
+.button_equipe p {
+    margin: 0;
+}
+
+.button_configuracoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+}
+
+.button_configuracoes img {
+    width: 25%;
+    height: auto;
+}
+
+.button_configuracoes p {
+    margin: 0;
+}
