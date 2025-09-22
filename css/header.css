@@ -1,7 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 header {
-  background-color: #DC4405;
-  display: flex;
-  justify-content: space-between;
+    background-color: #DC4405;
+    display: flex;
+    gap: 50px;
+    align-items: center;
 }
 
 ul, li {
@@ -9,18 +15,39 @@ ul, li {
 }
 
 .logo img {
-    padding: 2%;
-    width: 5%;
+    padding-left: 100px;
+    width: 7%;
     height: auto;
 }
 
-.search_bar {
+.search {
+    position: relative;
+    display: inline-block;
+}
 
+#search_bar {
+
+    width: 350px;
+    height: 35px;
+    border-radius: 15px;
+    border: none;
+    padding: 0 35px;
+}
+
+#lupa {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: auto;
+    cursor: pointer;
 }
 
 .buttons ul{
     display: flex;
     gap: 50px;
+    padding: 0 50px;
 }
 
 .button_cursos {
