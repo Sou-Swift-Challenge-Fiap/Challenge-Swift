@@ -9,7 +9,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 0;
+    padding: 0  75px;
+    padding-top: 10px;
 }
 
 ul, li {
@@ -17,8 +18,7 @@ ul, li {
     color: #fff;
 }
 
-.logo img {
-    padding-left: 100px;
+section img {
     width: 50px;
     height: auto;
 }
@@ -59,6 +59,7 @@ ul, li {
     align-items: center;
     text-align: center;
     gap: 5px;
+    cursor: pointer;
 }
 
 .button_cursos img {
@@ -76,6 +77,7 @@ ul, li {
     align-items: center;
     text-align: center;
     gap: 5px;
+    cursor: pointer;
 }
 
 .button_desafios img {
@@ -93,6 +95,7 @@ ul, li {
     align-items: center;
     text-align: center;
     gap: 5px;
+    cursor: pointer;
 }
 
 .button_ranking img {
@@ -110,6 +113,7 @@ ul, li {
     align-items: center;
     text-align: center;
     gap: 5px;
+    cursor: pointer;
 }
 
 .button_recompensas img {
@@ -127,6 +131,7 @@ ul, li {
     align-items: center;
     text-align: center;
     gap: 5px;
+    cursor: pointer;
 }
 
 .button_notificacoes img {
@@ -144,6 +149,7 @@ ul, li {
     align-items: center;
     text-align: center;
     gap: 5px;
+    cursor: pointer;
 }
 
 .button_perfil img {
@@ -161,6 +167,7 @@ ul, li {
     align-items: center;
     text-align: center;
     gap: 5px;
+    cursor: pointer;
 }
 
 .button_equipe img {
@@ -178,6 +185,7 @@ ul, li {
     align-items: center;
     text-align: center;
     gap: 5px;
+    cursor: pointer;
 }
 
 .button_configuracoes img {
@@ -187,4 +195,8 @@ ul, li {
 
 .button_configuracoes p {
     margin: 0;
+}
+
+@media screen(max-width: 600) {
+    
 }
