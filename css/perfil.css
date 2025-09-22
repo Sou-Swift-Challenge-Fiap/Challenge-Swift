@@ -152,8 +152,7 @@
 .banner-container {
   position: relative; /* cria área de referência */
   width: 100%;
-  height: 300px; /* altura do banner */
-  overflow: hidden; /* corta excessos */
+  text-align: center; 
   z-index: 0;
 }
 
@@ -171,16 +170,12 @@
 
 /* imagem do banner sempre por cima */
 .banner-img {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
+  max-width: 100%;   /* nunca passa da largura da tela */
+  height: auto;      /* mantém proporção */
+  display: inline-block;
+  margin: auto;
   z-index: 2;
-  display: block;
-  width: 80%;
-  height: 100%;
-  object-fit: cover;     /* garante que a imagem preencha sem distorcer */
-  z-index: 2;
-  border-radius: 3%;
 }
 
 
