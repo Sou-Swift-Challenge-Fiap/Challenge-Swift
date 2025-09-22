@@ -19,8 +19,10 @@
   <button class="btn" type="button">
     <i class="bi bi-list" style="font-size: 1.5rem;"></i>
   </button>
-  <form class="d-flex flex-grow-1 mx-2">
+  <form class="d-flex flex-grow-1 mx-2 input-wrapper">
     <input class="pesquisar form-control rounded-5" type="search" placeholder="Pesquisar..." aria-label="Pesquisar">
+      <img src="../../components/icons/search-outline.svg" class="icon-input" alt="icone-procurar">
+
   </form>
   <!-- icones -->
   <div class="d-flex align-center gap-3">
@@ -97,8 +99,9 @@
   <figure class="text-center m-4 box-profile">
     <img src="../../components/img/woman3_profile_pic.jpg" class="profile-pic" alt="Foto de Perfil">
     <div>
-      <button class="btn btn-link text-decoration-none">ALTERAR FOTO</button>
+      <button class="btn btn-link text-decoration-none link-secondary">ALTERAR FOTO</button>
     </div>
+    
   </figure>
       <!-- Aba Perfil -->
       <div class="tab-pane fade show active" id="perfil">
@@ -153,7 +156,7 @@
             <input type="text" class="form-control">
           </div>
           <div class="row mb-3">
-            <div class="col-md-6">
+            <div class="col-md-12">
               <label class="form-label">Data de início</label>
               <div class="d-flex gap-2">
                 <select class="form-select">
@@ -170,7 +173,7 @@
                 </select>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-12">
               <label class="form-label">Data de término (ou prevista)</label>
               <div class="d-flex gap-2">
                 <select class="form-select">
@@ -208,14 +211,22 @@
           <!-- Tema -->
           <div class="mb-3">
             <label class="form-label d-block">Tema</label>
-            <div class="d-flex gap-3">
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="tema" id="claro" checked>
-                <label class="form-check-label" for="claro">Claro</label>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="input-group custom-radio-input mb-2">
+                    <input type="text" class="form-control" value="Claro" readonly>
+                  <div class="input-group-text">
+                    <input class="form-check-input mt-0" type="radio" name="tema" id="claro" checked>
+                  </div>
+                </div>
               </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="tema" id="escuro">
-                <label class="form-check-label" for="escuro">Escuro</label>
+              <div class="col-md-6">
+                <div class="input-group custom-radio-input mb-2">
+                    <input type="text" class="form-control" value="Escuro" readonly>
+                  <div class="input-group-text">
+                    <input class="form-check-input mt-0" type="radio" name="tema" id="escuro">
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -225,23 +236,34 @@
             <label class="form-label d-block">Preferências</label>
             <div class="row">
               <div class="col-md-6">
-                <div class="form-check form-switch">
-                  <input class="form-check-input" type="checkbox" id="efeitos">
-                  <label class="form-check-label" for="efeitos">Efeitos sonoros</label>
+                <div class="input-group custom-radio-input mb-2">
+                   <input type="text" class="form-control" value="Efeitos sonoros" readonly>
+                  <div class="input-group-text">
+                    <input class="form-check-input mt-0" type="checkbox" id="efeitos">
+                  </div>
                 </div>
-                <div class="form-check form-switch">
-                  <input class="form-check-input" type="checkbox" id="recomendacoes">
-                  <label class="form-check-label" for="recomendacoes">Recomendações de cursos</label>
+
+                <div class="input-group custom-radio-input mb-2">
+                   <input type="text" class="form-control" value="Recomendações de cursos" readonly>
+                  <div class="input-group-text">
+                    <input class="form-check-input mt-0" type="checkbox" id="recomendacoes">
+                  </div>
                 </div>
               </div>
+
               <div class="col-md-6">
-                <div class="form-check form-switch">
-                  <input class="form-check-input" type="checkbox" id="vibracao">
-                  <label class="form-check-label" for="vibracao">Vibração</label>
+                <div class="input-group custom-radio-input mb-2">
+                    <input type="text" class="form-control" value="Vibração" readonly>
+                  <div class="input-group-text">
+                    <input class="form-check-input mt-0" type="checkbox" id="vibracao">
+                  </div>
                 </div>
-                <div class="form-check form-switch">
-                  <input class="form-check-input" type="checkbox" id="notificacoes">
-                  <label class="form-check-label" for="notificacoes">Notificações diárias</label>
+
+                <div class="input-group custom-radio-input mb-2">
+                    <input type="text" class="form-control" value="Notificações diárias" readonly>
+                  <div class="input-group-text">
+                    <input class="form-check-input mt-0" type="checkbox" id="notificacoes">
+                  </div>
                 </div>
               </div>
             </div>
@@ -262,12 +284,12 @@
           <div class="mb-3">
             <label class="form-label">Suporte</label>
             <div class="input-group mb-2">
+                <input type="text" class="form-control" value="Central de Ajuda" readonly>
               <span class="input-group-text"><i class="bi bi-headset"></i></span>
-              <input type="text" class="form-control" value="" placeholder="Central de ajuda">
             </div>
             <div class="input-group">
+              <input type="text" class="form-control" value="Ouvidoria" readonly>
               <span class="input-group-text"><i class="bi bi-chat-dots"></i></span>
-              <input type="text" class="form-control" value="" placeholder="Ouvidoria">
             </div>
           </div>
 

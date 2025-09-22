@@ -202,3 +202,23 @@
   }
 
 }
+
+.input-wrapper {
+  position: relative;
+  width: 40%;
+}
+
+.input-com-icone {
+  padding-right: 40px; /* espaço pro ícone não sobrepor o texto */
+}
+
+.icon-input {
+  position: absolute;
+  right: 10px;   /* distância da borda direita */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;   /* tamanho do ícone */
+  height: 20px;
+  pointer-events: none; /* não atrapalha o clique no input */
+}
+
