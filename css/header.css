@@ -189,7 +189,6 @@ body {
     padding: 10px 20px;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -260,5 +259,41 @@ body {
     text-decoration: none;
     color: black;
     font-size: 10px;
+  }
+}
+
+@media(min-width: 901px) {
+  .top-header {
+    background-color: #DC4405;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 5px 10px;
+  }
+
+  /* Zera o reset do bootstrap */
+  .buttons ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .buttons li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-size: 12px;
+  }
+
+  /* neutraliza aparência de input do Bootstrap na busca */
+  #search_bar {
+    box-shadow: none;
+    outline: none;
+    -webkit-appearance: none;
+    appearance: none;
   }
 }

@@ -1,21 +1,4 @@
-:root {
-      /* Paleta de cores */
-      --cor-primaria: #0d6efd;
-      --cor-primaria-hover: #0b5ed7;
-      --cor-fundo: #ffffff;
-      --cor-borda: #ccc;
-      --cor-texto: #000;
-      --cor-home: #ff4500; /* cor do botão Home no rodapé */
-      --cor-menu-web: #DC4405;
-
-      /* Tamanhos */
-      --tam-foto: 120px;
-      --tam-icone: 1.3rem;
-      --tam-footer-texto: 0.85rem;
-
-      /* Espaços */
-      --espaco-footer: 100px;
-    }
+@import url('variaveis.css');
 
     .banner_swift {
       margin: 30px;
@@ -109,7 +92,7 @@
       height: auto;
     }
 
-     .texto-com-imagem .img-icon-ranking{
+    .texto-com-imagem .img-icon-ranking{
        position: absolute; /* permite jogar a imagem por cima */
       top: -30px; /* sobe a imagem */
       left: 50%; /* centraliza na horizontal */
@@ -139,7 +122,6 @@
   z-index: 0;
 }
 
-
 /* faixa preta atrás do banner */
 .faixa-preta {
   position: absolute;
@@ -160,7 +142,6 @@
   margin: auto;
   z-index: 2;
 }
-
 
     @media (min-width: 768px) {
   .box-profile {
@@ -205,3 +186,11 @@
   pointer-events: none; /* não atrapalha o clique no input */
 }
 
+.conteiner {
+  background-color: var(--cor-fundo-card);
+  border-radius: 16px;
+}
+
+.nav-tabs {
+  border-bottom: none !important;
+}

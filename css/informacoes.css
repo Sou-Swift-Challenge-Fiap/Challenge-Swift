@@ -200,3 +200,15 @@ body {
   .logo-swift { height: 64px; }
   .xp-bar { width: 60px; }
 }
+
+@media(min-width: 992px) {
+  .container {
+    padding-top: 1.78rem;
+  }  
+}
+
+@media(max-width: 791.98px) {
+  .container {
+    padding-bottom: 5rem;
+  }  
+}
