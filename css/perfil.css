@@ -1,3 +1,4 @@
+
 @import url('variaveis.css');
 
     .banner_swift {
@@ -58,7 +59,12 @@
     width: 24px;
     height: auto;
 }
-
+.form-control {
+  border: 1px solid #000 !important;
+  border-radius: 8px !important;
+  box-shadow: none !important;
+  resize: none;
+}
 .texto-com-imagem {
       position: relative; /* cria uma área de referência */
       display: inline-block; /* deixa o texto ocupar só o espaço dele */
