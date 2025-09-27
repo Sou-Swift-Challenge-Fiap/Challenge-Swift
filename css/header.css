@@ -97,16 +97,6 @@ body {
   margin-bottom: 3px;
 }
 
-/* Telas menores*/
-@media (max-width: 900px) {
-  .top-header {
-    display: none;
-  }
-  .bottom-nav {
-    display: block;
-  }
-}
-
 .bottom-nav li {
   display: flex;
   flex-direction: column;
@@ -165,4 +155,110 @@ body {
   width: 35px;
   height: 35px;
   margin-bottom: -5px;
+}
+
+/*header escondido*/
+.header-mobile {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  body {
+    background-color: #DC4405;
+  }
+
+  .top-header{
+    display: none;
+  }
+
+  .bottom-nav {
+    display: block;
+  }
+
+  .bottom-nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px 5px;
+    margin: 0;
+  }
+
+  .header-mobile {
+    display: flex;
+    background-color: transparent;
+    padding: 10px 20px;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 200;
+  }
+
+  .menu-icon img {
+    padding-top: 5px;
+    width: 35px;
+    height: auto;
+  }
+
+  .search-bar input {
+    width: 100%;
+    max-width: 180px;
+    height: 23px;
+    border: none;
+    border-radius: 20px;
+    padding: 0 40px 0 15px;
+    background-color: #fff;
+    font-size: 12px;
+  }
+
+  .search-bar {
+    position: relative;
+  }
+
+  .search-bar::after {
+    content: url("/./components/icons/search-outline.svg");
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    pointer-events: none;
+  }
+
+  /* Ícones do lado direito */
+  .right-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .right-icons .img_notifications {
+    width: 18px;
+    height: auto;
+    cursor: pointer;
+  }
+
+  .right-icons .info {
+    width: 18px;
+    height: auto;
+    cursor: pointer;
+  }
+
+  .profile_pic {
+    width: 20px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 3px;
+  }
+
+  .arrow {
+    margin-left: -13px;
+    text-decoration: none;
+    color: black;
+    font-size: 10px;
+  }
 }
