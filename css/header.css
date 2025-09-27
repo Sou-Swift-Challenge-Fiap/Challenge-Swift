@@ -5,17 +5,12 @@
 }
 
 header {
-    background-color: #DC4405;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0  75px;
-    padding-top: 10px;
-}
-
-ul, li {
-    list-style: none;
-    color: #fff;
+   background-color: #DC4405;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 75px;
+   padding-top: 10px;
 }
 
 section img {
@@ -47,138 +42,24 @@ section img {
     cursor: pointer;
 }
 
-.buttons ul{
-    display: flex;
-    gap: 40px;
-    padding: 0 50px;
+/* BOTÕES SEMPRE À DIREITA */
+.buttons {
+    margin-left: auto; /* empurra o bloco pro canto direito */
 }
 
-.button_cursos {
+.buttons ul {
     display: flex;
-    flex-direction: column;
+    gap: 20px;
     align-items: center;
-    text-align: center;
-    gap: 5px;
-    cursor: pointer;
 }
 
-.button_cursos img {
-    width: 20px;
-    height: auto;
-}
-
-.button_cursos p {
-    margin: 0;
-}
-
-.button_desafios {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 5px;
-    cursor: pointer;
-}
-
-.button_desafios img {
-    width: 20px;
-    height: auto;
-}
-
-.button_desafios p {
-    margin: 0;
-}
-
-.button_ranking {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 5px;
-    cursor: pointer;
-}
-
-.button_ranking img {
-    width: 20px;
-    height: auto;
-}
-
-.button_ranking p {
-    margin: 0;
-}
-
-.button_recompensas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 5px;
-    cursor: pointer;
-}
-
-.button_recompensas img {
-    width: 20px;
-    height: auto;
-}
-
-.button_recompensas p {
-    margin: 0;
-}
-
-.button_notificacoes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 5px;
-    cursor: pointer;
-}
-
-.button_notificacoes img {
-    width: 20px;
-    height: auto;
-}
-
-.button_notificacoes p {
-    margin: 0;
-}
-
-.button_perfil {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 5px;
-    cursor: pointer;
-}
-
-.button_perfil img {
-    width: 20px;
-    height: auto;
-}
-
-.button_perfil p {
-    margin: 0;
-}
-
-.button_equipe {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 5px;
-    cursor: pointer;
-}
-
-.button_equipe img {
-    width: 20px;
-    height: auto;
-}
-
-.button_equipe p {
-    margin: 0;
-}
-
+.button_cursos,
+.button_desafios,
+.button_ranking,
+.button_recompensas,
+.button_notificacoes,
+.button_perfil,
+.button_equipe,
 .button_configuracoes {
     display: flex;
     flex-direction: column;
@@ -188,14 +69,47 @@ section img {
     cursor: pointer;
 }
 
+.button_cursos img,
+.button_desafios img,
+.button_ranking img,
+.button_recompensas img,
+.button_notificacoes img,
+.button_perfil img,
+.button_equipe img,
 .button_configuracoes img {
     width: 20px;
     height: auto;
 }
 
+.button_cursos p,
+.button_desafios p,
+.button_ranking p,
+.button_recompensas p,
+.button_notificacoes p,
+.button_perfil p,
+.button_equipe p,
 .button_configuracoes p {
     margin: 0;
 }
+
+.logo {
+    position: absolute;
+    left: 8px;
+    top: 12px;
+}
+
+@media screen and (max-width: 768px) {
+    .item-desktop {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .item-mobile {
+        display: none;
+    }
+}
+
 
 @media screen and (max-width: 900px) {
     header {
@@ -214,6 +128,10 @@ section img {
     #search_bar {
         width: 100%;
         max-width: 300px;
+    }
+
+    .buttons {
+        margin-left: 0; /* no mobile não precisa empurrar */
     }
 
     .buttons ul {
@@ -244,5 +162,11 @@ section img {
 
     .buttons p {
         font-size: 0.8rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .search {
+        display: none;
     }
 }
