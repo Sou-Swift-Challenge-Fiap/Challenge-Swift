@@ -4,15 +4,6 @@
   box-sizing: border-box;
 }
 
-<<<<<<< HEAD
-header {
-   background-color: #DC4405;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   padding: 0 75px;
-   padding-top: 10px;
-=======
 body {
   font-family: Arial, sans-serif;
 }
@@ -24,7 +15,6 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 5px 10px;
->>>>>>> 73ee7b50661cec08fbc6972e528f2e5a7500a8eb
 }
 
 .logo img {
@@ -252,136 +242,6 @@ body {
     cursor: pointer;
   }
 
-<<<<<<< HEAD
-/* BOTÕES SEMPRE À DIREITA */
-.buttons {
-    margin-left: auto; /* empurra o bloco pro canto direito */
-}
-
-.buttons ul {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-}
-
-.button_cursos,
-.button_desafios,
-.button_ranking,
-.button_recompensas,
-.button_notificacoes,
-.button_perfil,
-.button_equipe,
-.button_configuracoes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 5px;
-    cursor: pointer;
-}
-
-.button_cursos img,
-.button_desafios img,
-.button_ranking img,
-.button_recompensas img,
-.button_notificacoes img,
-.button_perfil img,
-.button_equipe img,
-.button_configuracoes img {
-    width: 20px;
-    height: auto;
-}
-
-.button_cursos p,
-.button_desafios p,
-.button_ranking p,
-.button_recompensas p,
-.button_notificacoes p,
-.button_perfil p,
-.button_equipe p,
-.button_configuracoes p {
-    margin: 0;
-}
-
-.logo {
-    position: absolute;
-    left: 8px;
-    top: 12px;
-}
-
-@media screen and (max-width: 768px) {
-    .item-desktop {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .item-mobile {
-        display: none;
-    }
-}
-
-
-@media screen and (max-width: 900px) {
-    header {
-        flex-direction: column;
-        padding: 10px 20px;
-        gap: 15px;
-    }
-
-    .search {
-        padding-left: 0;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-
-    #search_bar {
-        width: 100%;
-        max-width: 300px;
-    }
-
-    .buttons {
-        margin-left: 0; /* no mobile não precisa empurrar */
-    }
-
-    .buttons ul {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-        padding: 0;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    header {
-        padding: 10px;
-    }
-
-    section img {
-        width: 40px;
-    }
-
-    #search_bar {
-        max-width: 200px;
-    }
-
-    .buttons ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .buttons p {
-        font-size: 0.8rem;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .search {
-        display: none;
-    }
-}
-=======
   .right-icons .info {
     width: 18px;
     height: auto;
@@ -402,4 +262,3 @@ body {
     font-size: 10px;
   }
 }
->>>>>>> 73ee7b50661cec08fbc6972e528f2e5a7500a8eb
