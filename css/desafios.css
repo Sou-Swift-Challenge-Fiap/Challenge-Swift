@@ -1,0 +1,42 @@
+ .grid-container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 1rem;
+        align-items: stretch; /* força os cards a ocuparem mesma altura */
+      }
+
+      @media (max-width: 768px) {
+        .grid-container {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      .card {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 1rem;
+        text-align: center;
+        background-color: #f8f9fa;
+        height: 100%;          /* ocupa altura total da célula */
+        min-height: 220px;     /* altura mínima */
+        display: flex;         /* para alinhar conteúdo */
+        flex-direction: column;
+        justify-content: space-between; /* distribui imagem, texto e link */
+        transform: translateY(0.9px);
+      }
+
+      .card img {
+        display: block;
+        margin: 0 auto 10px auto;
+        width: 50px;
+      }
+
+      .card a {
+        color: blue;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      .card a:hover {
+        text-decoration: underline;
+      }
