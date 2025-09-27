@@ -1,0 +1,202 @@
+@import url('variaveis.css');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: clip;
+}
+
+:root {
+  --band-raise: 40px; /* quanto a faixa sobe acima do banner */
+}
+
+body {
+  background: #fff;
+  color: #1f1f1f;
+}
+
+.header-spacer { height: 56px; }
+.container { background-color: transparent; }  /* não altera layout do Bootstrap */
+.page-wrapper {
+  max-width: 960px;
+  margin-inline: auto;
+}
+
+.min-w-0 { min-width: 0; }
+.text-orange { color: var(--swift-orange); }
+
+.profile-separator {
+  border: 0;
+  border-top: 1px solid #000;
+  margin: 1rem 0 1.5rem;
+}
+
+.borda-preta {
+  border: 1px solid #000 !important;
+  border-radius: 8px !important;
+  box-shadow: none !important;
+  resize: none;
+}
+
+.banner-img { display: block; width: 100%; height: auto; }
+
+.promo-banner {
+  position: relative;            /* para camadas internas quando preciso */
+  z-index: 1;                    /* fica acima da faixa preta */
+  border: 1px solid #000;        /* borda preta uniforme (desktop) */
+  border-radius: 12px;
+  overflow: hidden;
+  background: #000;              /* evita halos nas quinas */
+  box-shadow: 0 0 0 #000;        /* explicitamente sem sombra */
+}
+.promo-banner .banner-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: inherit;
+}
+
+.profile-card {
+  border: 1px solid var(--swift-border);
+  border-radius: 16px;
+}
+.card-body {
+  background-color: var(--cor-fundo-card);
+  border-radius: 16px;
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #ddd;
+  overflow: hidden;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  font-weight: 600;
+  color: var(--swift-dark);
+}
+.section-title .bi { color: var(--swift-orange); }
+
+.btn-primary {
+  background-color: var(--swift-orange);
+  border-color: var(--swift-orange);
+}
+
+.level-badge { font-size: .9rem; color: #6c757d; }
+
+.xp-bar {
+  position: relative;
+  height: 4px;
+  width: 100px;                  /* mobile default */
+  background-color: #161616;
+  border-radius: 2px;
+}
+.xp-bar-fill {
+  position: absolute;
+  inset: 0;
+  width: 40%;
+  background-color: var(--swift-orange);
+  border-radius: 2px;
+}
+
+.profile-header { flex-wrap: nowrap; }
+
+.logo-swift {
+  flex: 0 0 auto;
+  display: block;
+  height: 48px;                  /* mobile base */
+  width: auto;
+  object-fit: contain;
+  margin-left: auto;
+}
+
+/* wrapper que expande para 100vw sem criar barra lateral */
+.full-bleed {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
+  overflow: visible;
+}
+
+/* conteúdo central com a mesma largura da page-wrapper */
+.band-inner {
+  max-width: 960px;               /* sincronizado com .page-wrapper */
+  margin: 0 auto;
+}
+
+/* caixa do banner (referência para a faixa) */
+.banner-box {
+  position: relative;
+  margin: 16px 0;                 /* respiro vertical */
+}
+
+.band-bg {
+  display: none;
+}
+
+/* fundo laranja no mobile */
+@media (max-width: 767.98px) {
+  body { background-color: var(--swift-orange); }
+
+  /* full-bleed volta ao fluxo do container */
+  .full-bleed {
+    left: 0;
+    right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    width: auto;
+  }
+
+  .band-inner {
+    max-width: 100%;
+    padding-inline: 12px; /* ~.75rem: aproxima gutter do container */
+  }
+
+  .banner-box,
+  .promo-banner {
+    margin: 12px 0;
+  }
+
+  /* remove bordas no mobile para visual mais “clean” */
+  .profile-card,
+  .promo-banner {
+    border: none;
+    box-shadow: none;
+  }
+
+  .band-bg { display: none; } /* reforço */
+}
+
+@media (min-width: 768px) {
+  .logo-swift { height: 56px; }
+
+  .band-bg {
+    display: block;
+    position: absolute;
+    z-index: 0;
+
+    /* centraliza a faixa em relação à viewport */
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 100vw;         /* ocupa toda a largura da viewport */
+    background: #000;
+
+    /* metade da altura do banner + deslocamento para cima */
+    top: calc(-1 * var(--band-raise));
+    height: calc(50% + var(--band-raise));
+  }
+}
+
+@media (min-width: 992px) {
+  .logo-swift { height: 64px; }
+  .xp-bar { width: 60px; }
+}

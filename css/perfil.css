@@ -17,6 +17,14 @@
       --espaco-footer: 100px;
     }
 
+    .banner_swift {
+      margin: 30px;
+      width: 40%;
+      height: auto;
+      position: relative;
+      z-index: 2;
+    }
+
     .img-nav{
       width: 24px;
       height: 24px;
@@ -33,29 +41,6 @@
       height: var(--tam-foto);
       border-radius: 50%;
       object-fit: cover;
-    }
-
-    /* Rodapé fixo estilo mobile */
-    .footer-nav {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      background: var(--cor-fundo);
-      border-top: 1px solid var(--cor-borda);
-      z-index: 1030;
-      height: 70px;
-    }
-
-    .footer-nav .nav-link {
-      text-align: center;
-      font-size: var(--tam-footer-texto);
-      color: var(--cor-texto);
-    }
-
-    .footer-nav .nav-link i {
-      display: block;
-      font-size: var(--tam-icone);
     }
 
     /* Botão azul salvar */
