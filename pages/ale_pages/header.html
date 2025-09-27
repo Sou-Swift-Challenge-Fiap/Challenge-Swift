@@ -1,56 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/./css/header.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/./css/header.css">
 </head>
 
 <body>
-    <header>
-        <section class="logo">
-            <img src="/./components/img/logo_swift.png" alt="">
-        </section>
-        <section class="search">
-            <input type="search" name="search" id="search_bar">
-            <img src="/./components/icons/search-outline.svg" alt="lupa" id="lupa">
-        </section>
-        <section class="buttons">
-            <ul>
-                <li class="button_cursos">
-                    <img src="/./components/icons/courses_button2.png" alt="botão de cursos">
-                    <p>Cursos</p>
-                </li>
-                <li class="button_desafios">
-                    <img src="/./components/icons/challenge_icon2.png" alt="botão de desafio">
-                    <p>Desafios</p>
-                </li>
-                <li class="button_ranking">
-                    <img src="/./components/icons/ranking_icon2.png" alt="botão de ranking">
-                    <p>Ranking</p>
-                </li>
-                <li class="button_recompensas">
-                    <img src="/./components/icons/rewards_button - Copia2.png" alt="botão de recompensas">
-                    <p>Recompensas</p>
-                </li>
-                <li class="button_notificacoes">
-                    <img src="/./components/icons/notifications-outline2.png" alt="botão de Notificações">
-                    <p>Notificações</p>
-                </li>
-                <li class="button_perfil">
-                    <img src="/./components/icons/profile_icon2.svg" alt="botão de perfil">
-                    <p>Perfil</p>
-                </li>
-                <li class="button_equipe">
-                    <img src="/./components/icons/team_icon2.png" alt="botão de equipe">
-                    <p>Equipe</p>
-                </li>
-                <li class="button_configuracoes">
-                    <img src="/./components/icons/setting_icon2.svg" alt="botão de configurações">
-                    <p>Configurações</p>
-                </li>
-            </ul>
-        </section>
-    </header>
+  <!-- Menu superior -->
+  <header class="top-header">
+    <section class="logo">
+      <img src="/./components/img/logo_swift.png" alt="Logo">
+    </section>
+
+    <section class="search">
+      <input type="search" name="search" id="search_bar" placeholder="Pesquisar...">
+      <img src="/./components/icons/search-outline.svg" alt="lupa" id="lupa">
+    </section>
+
+    <section class="buttons">
+        <ul>
+        <li><a href="#"><img src="/./components/icons/courses_button2.png" alt="">Cursos</a></li>
+        <li><a href="#"><img src="/./components/icons/challenge_icon2.png" alt="">Desafios</a></li>
+        <li><a href="#"><img src="/./components/icons/ranking_icon2.png" alt="">Ranking</a></li>
+        <li><a href="#"><img src="/./components/icons/rewards_button - Copia2.png" alt="">Recompensas</a></li>
+        <li><a href="#"><img src="/./components/icons/notifications-outline2.png" alt="">Notificações</a></li>
+        <li><a href="/./pages/perfil.html"><img src="/./components/icons/profile_icon2.svg" alt="">Perfil</a></li>
+        <li><a href="#"><img src="/./components/icons/team_icon2.png" alt="">Equipe</a></li>
+        <li><a href="#"><img src="/./components/icons/setting_icon2.svg" alt="">Configurações</a></li>
+        </ul>
+    </section>
+  </header>
+
+  <!-- Menu inferior -->
+  <nav class="bottom-nav">
+    <ul>
+      <li><img src="/./components/icons/courses_button.png" alt=""><p>Cursos</p></li>
+      <li><img src="/./components/icons/challenge_icon.png" alt=""><p>Desafios</p></li>
+       <li class="home-btn"><img src="/./components/img/logo_swift.png" alt=""><p>Home</p></li>
+      <li><img src="/./components/icons/ranking_icon.png" alt=""><p>Ranking</p></li>
+      <li><img src="/./components/icons/rewards_button - Copia.png" alt=""><p>Recompensas</p></li>
+    </ul>
+  </nav>
 </body>
 </html>
