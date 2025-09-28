@@ -15,7 +15,6 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 5px 10px;
-  border-radius: 10px;
 }
 
 .logo img {
@@ -162,10 +161,12 @@ body {
   display: none;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 766px) {
   body {
-    background-color: white;
-    border: 10px solid #DC4405;
+    background-color: #DC4405;
+    border: 1px solid #DC4405;
+    padding: 8px 10px 0px 10px ;
+
     
   }
 
