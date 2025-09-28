@@ -15,7 +15,6 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 5px 10px;
-  border-radius: 10px;
 }
 
 .logo img {
@@ -164,9 +163,7 @@ body {
 
 @media (max-width: 900px) {
   body {
-    background-color: white;
     border: 10px solid #DC4405;
-    
   }
 
   .top-header{
@@ -187,7 +184,7 @@ body {
 
   .header-mobile {
     display: flex;
-    background-color: transparent;
+    background-color: transparent !important;
     padding: 10px 20px;
     align-items: center;
     justify-content: space-between;

@@ -125,6 +125,11 @@ body {
   width: 100vw;
   overflow: visible;
 }
+@media(max-width: 767.98px) {
+  .container {
+    background-color: var(--cor-menu-web);
+  }
+}
 
 /* conteúdo central com a mesma largura da page-wrapper */
 .band-inner {
@@ -138,13 +143,9 @@ body {
   margin: 16px 0;                 /* respiro vertical */
 }
 
-.band-bg {
-  display: none;
-}
-
 /* fundo laranja no mobile */
 @media (max-width: 767.98px) {
-  body { background-color: var(--swift-orange); }
+  body { background-color: var(--cor-menu-web); }
 
   /* full-bleed volta ao fluxo do container */
   .full-bleed {
@@ -186,12 +187,10 @@ body {
     /* centraliza a faixa em relação à viewport */
     left: 50%;
     transform: translateX(-50%);
-
-    width: 100vw;         /* ocupa toda a largura da viewport */
+    width: 100vw;
     background: #000;
-
     /* metade da altura do banner + deslocamento para cima */
-    top: calc(-1 * var(--band-raise));
+    top: calc(-1.1 * var(--band-raise));
     height: calc(50% + var(--band-raise));
   }
 }

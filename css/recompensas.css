@@ -1,0 +1,54 @@
+:root{ --swift-orange:#f25a1d; --swift-gray:#efefef; --swift-border:#e6e6e6; }
+
+.swift-card{
+  border:1px solid var(--swift-border);
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:0 4px 14px rgba(0,0,0,.06);
+  transition:transform .15s ease, box-shadow .15s ease;
+}
+.swift-card:hover{ transform:translateY(-2px); box-shadow:0 10px 26px rgba(0,0,0,.10); }
+
+/* área da imagem: quadrada e sem cortar, com respiro */
+.swift-media{ background:#fff; }
+.swift-media .ratio{ --bs-aspect-ratio:100%; }
+.swift-media img{
+  width:100%; height:100%;
+  object-fit:contain;
+  padding:.65rem;        /* dá o “respiro” que aparece no mock */
+}
+
+/* título pequeno em caixa-alta */
+.swift-title{
+  font-size:.78rem;      /* ~12–13px */
+  line-height:1.2;
+  font-weight:700;
+  text-transform:uppercase;
+  margin:0 0 .25rem;
+}
+
+/* rodapé cinza */
+.swift-footer{
+  background:var(--swift-gray) !important;
+  border:0 !important;
+  padding:.5rem .625rem .65rem !important;
+}
+
+/* custo + botão laranja pequeno + favorito micro */
+.swift-cost{
+  font-size:.8rem;
+  font-weight:700;
+  display:inline-flex; align-items:center; gap:.35rem;
+}
+.swift-redeem{
+  background:var(--swift-orange); color:#fff; border:0;
+  padding:.3rem .6rem; line-height:1; font-weight:800;
+  border-radius:6px; font-size:.7rem;
+}
+.swift-fav{
+  width:24px; height:24px; padding:0;
+  border-radius:50%; display:grid; place-items:center;
+  border:1px solid #d9d9d9; background:#fff; color:#6c6c6c;
+}
+.swift-fav.active{ background:#ffe8df; border-color:transparent; color:var(--swift-orange); }
+.swift-fav i{ font-size:12px; }
