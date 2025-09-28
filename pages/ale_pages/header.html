@@ -34,8 +34,8 @@
 
   <!-- Header mobile -->
   <header class="header-mobile">
-    <div class="menu-icon">
-      <a href="#" class="menu_icon"><img src="/./components/icons/menu-outline.svg" alt=""></a>
+    <div class="menu-icon" onclick="toggleMenu()">
+      <img src="/./components/icons/menu-outline.svg" alt="">
     </div>
 
     <!-- Barra de pesquisa -->
@@ -50,7 +50,25 @@
       <a href="#"><img src="/./components/img/woman1_profile_pic.jpg" class="profile_pic" alt=""></a>
       <a href="#" class="arrow">▼</a>
     </div>
-</header>
+  </header>
+
+  <!-- Menu lateral oculto -->
+  <nav id="sidebar" class="sidebar">
+      <ul>
+          <li><a href="">Início</a></li>
+          <li><a href="">Cursos</a></li>
+          <li><a href="">Ranking</a></li>
+          <li><a href="/./pages/pages_geovanne/recompensas.html">Recompensas</a></li>
+          <li><a href="/./pages/pages_quislom/desafios.html">Desafios</a></li>
+          <li><a href="/./pages/pages_quislom/perfil.html">Perfil</a></li>
+          <li><a href="">Notificações</a></li>
+          <li><a href="">Minha equipe</a></li>
+          <li><a href="">Configurações</a></li>
+      </ul>
+  </nav>
+
+  <!-- Overlay escuro -->
+  <div id="overlay" class="overlay" onclick="toggleMenu()"></div>
 
 
   <!-- Menu inferior -->
@@ -63,5 +81,7 @@
       <li><img src="/./components/icons/rewards_button - Copia.png" alt=""><a href="#">Recompensas</a></li>
     </ul>
   </nav>
+
+  <script src="/./js/header.js"></script>
 </body>
 </html>

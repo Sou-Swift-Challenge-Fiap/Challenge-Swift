@@ -13,3 +13,9 @@ document.addEventListener("DOMContentLoaded", () => {
       console.error("Erro ao importar header:", error);
     });
 });
+
+
+function toggleMenu() {
+    document.getElementById("sidebar").classList.toggle("active");
+    document.getElementById("overlay").classList.toggle("active");
+}
