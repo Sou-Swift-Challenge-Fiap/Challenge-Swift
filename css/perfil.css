@@ -1,7 +1,26 @@
 
-@import url('variaveis.css');
 
-    .banner_swift {
+@import url('variaveis.css');
+.container{
+  max-width: 100%;
+  padding: 0;
+}
+@media  (max-width: 767px) {
+  .container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);}
+}
+
+ .container-form{
+
+ }
+
+
+.banner_swift {
       margin: 30px;
       width: 40%;
       height: auto;
@@ -44,10 +63,6 @@
       color: #fff;
     }
 
-    /* Espaço extra para não esconder conteúdo atrás do footer */
-    .container-form {
-      margin-bottom: var(--espaco-footer);
-    }
 
     @media (max-width: 768px) {
       .container-form {
@@ -64,7 +79,7 @@
   .nav-link.home {
     display: flex;
     align-items: center;
-    gap: 5px; /* espaço entre imagem e texto */
+    gap: 5px; 
 }
 
 .logo-home {
@@ -77,27 +92,33 @@
   box-shadow: none !important;
   resize: none;
 }
+
+.form-select{
+    border: 1px solid #000 !important;
+
+}
+
 .texto-com-imagem {
-      position: relative; /* cria uma área de referência */
-      display: inline-block; /* deixa o texto ocupar só o espaço dele */
+      position: relative; 
+      display: inline-block; 
       top: 35px;
     }
 
     .texto-com-imagem .img-swfit-icon{
-      position: absolute; /* permite jogar a imagem por cima */
-      top: -35px; /* sobe a imagem */
-      left: 50%; /* centraliza na horizontal */
-      transform: translateX(-50%); /* ajusta certinho no meio */
-      width: 50px; /* tamanho da imagem */
+      position: absolute; 
+      top: -35px; 
+      left: 50%; 
+      transform: translateX(-50%); 
+      width: 50px;
       height: auto;
     }
 
     .texto-com-imagem .img-courses-icon{
-      position: absolute; /* permite jogar a imagem por cima */
-      top: -30px; /* sobe a imagem */
-      left: 50%; /* centraliza na horizontal */
-      transform: translateX(-50%); /* ajusta certinho no meio */
-      width: 25px; /* tamanho da imagem */
+      position: absolute;
+      top: -30px; 
+      left: 50%; 
+      transform: translateX(-50%); 
+      width: 25px; 
       height: auto;
     }
 
@@ -124,7 +145,7 @@
       top: -30px; /* sobe a imagem */
       left: 50%; /* centraliza na horizontal */
       transform: translateX(-50%); /* ajusta certinho no meio */
-      width: 25px; /* tamanho da imagem */
+      width: 25px; 
       height: auto;
     }
 
@@ -134,7 +155,7 @@
 }
 
 .banner-container {
-  position: relative; /* cria área de referência */
+  position: relative; 
   width: 100%;
   text-align: center; 
   z-index: 0;
@@ -145,8 +166,8 @@
   position: absolute;
   left: 0;
   right: 0;
-  top: 0%;                  /* quanto menor, mais pra cima (ex: 0%, 10%, 20%) */
-  height: 160px;             /* altura da faixa preta */
+  top: 0%;                  
+  height: 160px;             
   background: black;
   z-index: 1;
 }
@@ -154,21 +175,26 @@
 /* imagem do banner sempre por cima */
 .banner-img {
   position: relative;
-  max-width: 100%;   /* nunca passa da largura da tela */
-  height: auto;      /* mantém proporção */
+  max-width: 100%;   
+  height: auto;      
   display: inline-block;
   margin: auto;
   z-index: 2;
 }
 
     @media (min-width: 768px) {
+
+
   .box-profile {
-    margin-top: -60px; /* sobe a foto do perfil sobre o card */
+    margin-top: -60px; 
   }
 
   .container-form {
     background: #f9f9f9;
     border-radius: 10px;
+    width: 80%;
+    position: relative;
+    left: 10%;
   }
 
   .profile-pic {
@@ -196,10 +222,10 @@
 
 .icon-input {
   position: absolute;
-  right: 10px;   /* distância da borda direita */
+  right: 10px;   
   top: 50%;
   transform: translateY(-50%);
-  width: 20px;   /* tamanho do ícone */
+  width: 20px;   
   height: 20px;
   pointer-events: none; /* não atrapalha o clique no input */
 }
