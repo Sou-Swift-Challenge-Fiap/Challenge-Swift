@@ -44,7 +44,7 @@ body {
   position: relative;            /* para camadas internas quando preciso */
   z-index: 1;                    /* fica acima da faixa preta */
   border: 1px solid #000;        /* borda preta uniforme (desktop) */
-  border-radius: 12px;
+  border-radius: 4px;
   overflow: hidden;
   background: #000;              /* evita halos nas quinas */
   box-shadow: 0 0 0 #000;        /* explicitamente sem sombra */
@@ -58,7 +58,7 @@ body {
 
 .profile-card {
   border: 1px solid var(--swift-border);
-  border-radius: 16px;
+  border-radius: 6px;
 }
 .card-body {
   background-color: var(--cor-fundo-card);
