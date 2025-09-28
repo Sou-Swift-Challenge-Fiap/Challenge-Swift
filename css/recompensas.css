@@ -1,5 +1,8 @@
 @import url('variaveis.css');
 
+body {
+  overflow-x: hidden;
+}
 
 .swift-card{
   border:1px solid var(--swift-border);
@@ -10,7 +13,6 @@
 }
 .swift-card:hover{ transform:translateY(-2px); box-shadow:0 10px 26px rgba(0,0,0,.10); }
 
-/* área da imagem: quadrada e sem cortar, com respiro */
 .swift-media{ background:#fff; }
 .swift-media .ratio{ --bs-aspect-ratio:100%; }
 .swift-media img{
@@ -19,23 +21,27 @@
   padding:.65rem;
 }
 
-/* título pequeno em caixa-alta */
+@media (max-width: 767.98px) {
+  .swift-media img{
+  object-fit:contain;
+  padding:.100rem;
+  }
+}
+
 .swift-title{
-  font-size:.78rem;      /* ~12–13px */
+  font-size:.78rem;
   line-height:1.2;
   font-weight:700;
   text-transform:uppercase;
   margin:0 0 .25rem;
 }
 
-/* rodapé cinza */
 .swift-footer{
   background:var(--swift-gray2) !important;
   border:0 !important;
   padding:.5rem .625rem .65rem !important;
 }
 
-/* custo + botão laranja pequeno + favorito micro */
 .swift-cost{
   font-size:.8rem;
   font-weight:700;
@@ -53,7 +59,6 @@
   border-radius:50%; display:grid; place-items:center;
   border:1px solid #d9d9d9; background:#fff; color:#6c6c6c;
 }
-
 
 .band-inner { max-width: 960px; margin: 0 auto; }
 .banner-box { position: relative; }
@@ -76,7 +81,6 @@
   margin-left: 0.5rem;
 }
 
-/* conteúdo do herói (fica ACIMA da faixa) */
 .swift-hero {
   position: relative;
   z-index: 1;
@@ -84,7 +88,6 @@
   text-align: center;
 }
 
-/* layout interno do herói */
 .hero-wrap { display: grid; gap: 20px; justify-items: center; }
 .logo-swift { height: 100px; width: auto; object-fit: contain; }
 @media (min-width: 768px) { .logo-swift { height: 150px; } }
@@ -113,7 +116,6 @@
   background: var(--swift-orange, #f25a1d);
 }
 
-/* FAIXA PRETA POR TRÁS (desktop) */
 @media (min-width: 768px) {
   .band-bg {
     position: absolute;
@@ -128,5 +130,216 @@
 
 @media (max-width: 767.98px) {
   .band-bg { display: none; }
+
+  .swift-hero {
+    color: #000;
+    text-align: left;
+    padding: 16px 0 8px;
+  }
+
+  .hero-wrap {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-auto-rows: min-content;
+    align-items: center;
+    column-gap: 16px;
+    row-gap: 10px;
+  }
+
+  .logo-swift {
+    grid-column: 1;
+    grid-row: 1;
+    height: 56px;
+    width: auto;
+    margin: 0;
+    object-fit: contain;
+  }
+
+  .hero-nav {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: min-content;
+    align-items: center;
+    column-gap: 12px;
+    row-gap: 10px;
+  }
+
+  .hero-progress {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+    align-items: center;
+    gap: 6px 8px;
+    justify-items: start;
+  }
+
+  .hero-level {
+    grid-column: 1;
+    grid-row: 1;
+    font-weight: 700;
+    font-size: 0.95rem;
+    margin: 0;
+  }
+
+  .swift-progress {
+    grid-column: 2;
+    grid-row: 1;
+    width: clamp(180px, 60vw, 260px);
+    height: 8px;
+    border-radius: 4px;
+    background: #e9ecef;
+    overflow: hidden;
+  }
+  .swift-progress .progress-bar {
+    background: var(--swift-orange, #f25a1d);
+  }
+
+  #levelHint {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    margin: 0;
+    font-size: 0.85rem;
+    color: #333;
+  }
+
+  .hero-link {
+    color: #000 !important;
+    text-decoration: none !important;
+    font-weight: 500;
+    font-size: 0.8rem !important;
+  }
+  .hero-nav > .hero-link:nth-of-type(1) {
+    grid-row: 2; grid-column: 1; justify-self: start;
+  }
+  .hero-nav > .hero-link:nth-of-type(2) {
+    grid-row: 2; grid-column: 2; justify-self: start;
+  }
+
+  #rewardsGrid.row { --bs-gutter-x: 0.75rem; }
+  #rewardsGrid > .col { flex: 0 0 50%; max-width: 50%; }
 }
 
+@media (max-width: 767.98px) {
+  .hero-wrap {
+    display: grid;
+    grid-template-columns: 84px 1fr;
+    grid-auto-rows: min-content;
+    align-items: stretch;
+    column-gap: 16px;
+    row-gap: 10px;
+  }
+
+  .logo-swift {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    align-self: stretch;
+    justify-self: start;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    margin: 0;
+  }
+
+  .hero-link {
+    text-decoration: none !important;
+    font-weight: 500;
+    font-size: .95rem;
+    padding: 0;
+  }
+  .hero-nav > .hero-link:nth-of-type(1) { grid-row: 2; grid-column: 1; justify-self: start; }
+  .hero-nav > .hero-link:nth-of-type(2) { grid-row: 2; grid-column: 2; justify-self: start; }
+}
+
+@media (max-width: 767.98px) {
+  .rewardsGridSection {
+    padding-top: 0 !important;
+    padding-bottom: 70px !important;
+    margin-top: 0 !important;
+    background-color: var(--cor-menu-web);
+  }
+}
+
+@media (max-width: 767.98px) {
+  #rewardsGrid {
+    --bs-gutter-x: 0.5rem !important;
+    --bs-gutter-y: 0.5rem !important;
+    padding: 0 0.5rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+.swift-progress {
+  width: 200px !important;
+  }
+}
+
+.grid-fullbleed{
+  position: relative;
+  left: 50%;
+  right: 100%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
+  max-width: 100vw;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+@media (min-width: 992px){
+  .grid-fullbleed{
+    left: auto; right: auto; margin-left: 0; margin-right: 0;
+    width: 100%; max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  #rewardsGrid .swift-card{
+    max-width: 280px;
+  }
+
+  #rewardsGrid {
+    margin: 0 20px;
+  }
+}
+
+/* FIX iPad / tablets (md) — corrige sumiço do grid ao neutralizar o full-bleed */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+  .grid-fullbleed{
+    position: relative;  /* mantém como estava */
+    left: auto;
+    right: auto;         /* <-- ESSENCIAL: zera o right herdado (antes estava 100%) */
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  /* Layout de 3 colunas no md (opcional, mantém respiro) */
+  #rewardsGrid {
+    --bs-gutter-x: 0.75rem;
+    --bs-gutter-y: 0.75rem;
+    margin: 0 12px;
+  }
+  #rewardsGrid > .col {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+
+  /* Cards sem limite estreito no md */
+  #rewardsGrid .swift-card{
+    max-width: 100%;
+  }
+
+  .rewardsGridSection {
+    padding-top: 0;
+    margin-top: 0;
+  }
+}
