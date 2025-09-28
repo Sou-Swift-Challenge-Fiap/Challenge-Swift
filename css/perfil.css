@@ -9,6 +9,12 @@
       z-index: 2;
     }
 
+    @media(max-width: 768px) {
+      main {
+        background-color: var(--cor-fundo-card);;
+      }
+    }
+
     .img-nav{
       width: 24px;
       height: 24px;
@@ -41,6 +47,12 @@
     /* Espaço extra para não esconder conteúdo atrás do footer */
     .container-form {
       margin-bottom: var(--espaco-footer);
+    }
+
+    @media (max-width: 768px) {
+      .container-form {
+        margin-bottom: 4rem;
+      }
     }
 
     /* Ícone Home destacado */
@@ -192,11 +204,23 @@
   pointer-events: none; /* não atrapalha o clique no input */
 }
 
-.conteiner {
+.container {
   background-color: var(--cor-fundo-card);
   border-radius: 16px;
 }
 
 .nav-tabs {
   border-bottom: none !important;
+}
+
+.img-container {
+  background-color: white;
+  padding-top: 2.5px;
+  padding-bottom: 2.5px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.phone-shell{
+  border: 8px solid var(--cor-menu-web);
 }

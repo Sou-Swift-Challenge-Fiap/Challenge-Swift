@@ -15,237 +15,241 @@
 </head>
 
 <body>
-  <header class="header-spacer swift-header" id="header"></header>
-  <figure class="banner-container d-none d-md-block text-center ">
-    <div class="faixa-preta"></div>
+  <main>
+    <div class="phone-shell">
+      <header class="header-spacer swift-header" id="header"></header>
+      <figure class="banner-container d-none d-md-block text-center ">
+      <div class="faixa-preta"></div>
+      <img src="../../components/img/banner_swift_exemple.png"
+        alt="Banner Swift"
+        class="banner_swift">
+      </figure>
 
-  <img src="../../components/img/banner_swift_exemple.png"
-      alt="Banner Swift"
-      class="banner_swift">
-  </figure>
+      <!-- Abas de navegação -->
+      <div class="container mt-3">
+        <ul class="nav nav-tabs justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link active" data-bs-toggle="tab" href="#perfil">Perfil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#formacao">Formação</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#config">Configuração</a>
+          </li>
+        </ul>
 
+        <div class="tab-content container-form p-3 border border-top-0 rounded-bottom container">
+            <!-- Foto do perfil -->
+          <div class="img-container">
+            <figure class="text-center m-4 box-profile">
+              <img src="../../components/img/woman3_profile_pic.jpg" class="profile-pic" alt="Foto de Perfil">
+              <div>
+                <button class="btn btn-link text-decoration-none link-secondary">ALTERAR FOTO</button>
+              </div>
+              
+            </figure>          
+          </div>
+          <!-- Aba Perfil -->
+          <div class="tab-pane fade show active" id="perfil">
+            <form>
+              <div class="mb-3">
+                <label class="form-label">Nome</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Cargo</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="mb-3">
+                <label class="form-label">E-mail</label>
+                <input type="email" class="form-control">
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Alterar senha</label>
+                <input type="password" class="form-control">
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Número de telefone</label>
+                <input type="tel" class="form-control">
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Equipe</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Localidade</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="text-end">
+                <button type="submit" class="btn btn-salvar">Salvar</button>
+              </div>
+            </form>
+          </div>
 
-  <!-- Abas de navegação -->
-  <div class="container mt-3">
-    <ul class="nav nav-tabs justify-content-center">
-      <li class="nav-item">
-        <a class="nav-link active" data-bs-toggle="tab" href="#perfil">Perfil</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" data-bs-toggle="tab" href="#formacao">Formação</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" data-bs-toggle="tab" href="#config">Configuração</a>
-      </li>
-    </ul>
+          <!-- Aba Formação -->
+          <div class="tab-pane fade" id="formacao">
+            <form>
+              <div class="mb-3">
+                <label class="form-label">Formação acadêmica</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Instituição de ensino</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Curso</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-12">
+                  <label class="form-label">Data de início</label>
+                  <div class="d-flex gap-2">
+                    <select class="form-select">
+                      <option selected>Mês</option>
+                      <option>Janeiro</option>
+                      <option>Fevereiro</option>
+                      <option>Março</option>
+                    </select>
+                    <select class="form-select">
+                      <option selected>Ano</option>
+                      <option>2025</option>
+                      <option>2024</option>
+                      <option>2023</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <label class="form-label">Data de término (ou prevista)</label>
+                  <div class="d-flex gap-2">
+                    <select class="form-select">
+                      <option selected>Mês</option>
+                      <option>Janeiro</option>
+                      <option>Fevereiro</option>
+                      <option>Março</option>
+                    </select>
+                    <select class="form-select">
+                      <option selected>Ano</option>
+                      <option>2025</option>
+                      <option>2024</option>
+                      <option>2023</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Cursos extracurriculares</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Sobre</label>
+                <textarea class="form-control" rows="3"></textarea>
+              </div>
+              <div class="text-end">
+                <button type="submit" class="btn btn-salvar">Salvar</button>
+              </div>
+            </form>
+          </div>
 
-    <main class="tab-content container-form p-3 border border-top-0 rounded-bottom conteiner">
-        <!-- Foto do perfil -->
-  <figure class="text-center m-4 box-profile">
-    <img src="../../components/img/woman3_profile_pic.jpg" class="profile-pic" alt="Foto de Perfil">
-    <div>
-      <button class="btn btn-link text-decoration-none link-secondary">ALTERAR FOTO</button>
+          <!-- Aba Configuração -->
+          <div class="tab-pane fade" id="config">
+            <form>
+              <!-- Tema -->
+              <div class="mb-3">
+                <label class="form-label d-block">Tema</label>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="input-group custom-radio-input mb-2">
+                        <input type="text" class="form-control" value="Claro" readonly>
+                      <div class="input-group-text">
+                        <input class="form-check-input mt-0" type="radio" name="tema" id="claro" checked>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="input-group custom-radio-input mb-2">
+                        <input type="text" class="form-control" value="Escuro" readonly>
+                      <div class="input-group-text">
+                        <input class="form-check-input mt-0" type="radio" name="tema" id="escuro">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Preferências -->
+              <div class="mb-3">
+                <label class="form-label d-block">Preferências</label>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="input-group custom-radio-input mb-2">
+                      <input type="text" class="form-control" value="Efeitos sonoros" readonly>
+                      <div class="input-group-text">
+                        <input class="form-check-input mt-0" type="checkbox" id="efeitos">
+                      </div>
+                    </div>
+
+                    <div class="input-group custom-radio-input mb-2">
+                      <input type="text" class="form-control" value="Recomendações de cursos" readonly>
+                      <div class="input-group-text">
+                        <input class="form-check-input mt-0" type="checkbox" id="recomendacoes">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="input-group custom-radio-input mb-2">
+                        <input type="text" class="form-control" value="Vibração" readonly>
+                      <div class="input-group-text">
+                        <input class="form-check-input mt-0" type="checkbox" id="vibracao">
+                      </div>
+                    </div>
+
+                    <div class="input-group custom-radio-input mb-2">
+                        <input type="text" class="form-control" value="Notificações diárias" readonly>
+                      <div class="input-group-text">
+                        <input class="form-check-input mt-0" type="checkbox" id="notificacoes">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Idioma -->
+              <div class="mb-3">
+                <label class="form-label">Idioma</label>
+                <select class="form-select">
+                  <option selected>Selecionar</option>
+                  <option value="pt">Português</option>
+                  <option value="en">Inglês</option>
+                  <option value="es">Espanhol</option>
+                </select>
+              </div>
+
+              <!-- Suporte -->
+              <div class="mb-3">
+                <label class="form-label">Suporte</label>
+                <div class="input-group mb-2">
+                    <input type="text" class="form-control" value="Central de Ajuda" readonly>
+                  <span class="input-group-text"><i class="bi bi-headset"></i></span>
+                </div>
+                <div class="input-group">
+                  <input type="text" class="form-control" value="Ouvidoria" readonly>
+                  <span class="input-group-text"><i class="bi bi-chat-dots"></i></span>
+                </div>
+              </div>
+
+              <!-- Botão -->
+              <div class="text-end">
+                <button type="submit" class="btn btn-salvar">Salvar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
-    
-  </figure>
-      <!-- Aba Perfil -->
-      <div class="tab-pane fade show active" id="perfil">
-        <form>
-          <div class="mb-3">
-            <label class="form-label">Nome</label>
-            <input type="text" class="form-control">
-          </div>
-          <div class="mb-3">
-            <label class="form-label">Cargo</label>
-            <input type="text" class="form-control">
-          </div>
-          <div class="mb-3">
-            <label class="form-label">E-mail</label>
-            <input type="email" class="form-control">
-          </div>
-          <div class="mb-3">
-            <label class="form-label">Alterar senha</label>
-            <input type="password" class="form-control">
-          </div>
-          <div class="mb-3">
-            <label class="form-label">Número de telefone</label>
-            <input type="tel" class="form-control">
-          </div>
-          <div class="mb-3">
-            <label class="form-label">Equipe</label>
-            <input type="text" class="form-control">
-          </div>
-          <div class="mb-3">
-            <label class="form-label">Localidade</label>
-            <input type="text" class="form-control">
-          </div>
-          <div class="text-end">
-            <button type="submit" class="btn btn-salvar">Salvar</button>
-          </div>
-        </form>
-      </div>
-
-      <!-- Aba Formação -->
-      <div class="tab-pane fade" id="formacao">
-        <form>
-          <div class="mb-3">
-            <label class="form-label">Formação acadêmica</label>
-            <input type="text" class="form-control">
-          </div>
-          <div class="mb-3">
-            <label class="form-label">Instituição de ensino</label>
-            <input type="text" class="form-control">
-          </div>
-          <div class="mb-3">
-            <label class="form-label">Curso</label>
-            <input type="text" class="form-control">
-          </div>
-          <div class="row mb-3">
-            <div class="col-md-12">
-              <label class="form-label">Data de início</label>
-              <div class="d-flex gap-2">
-                <select class="form-select">
-                  <option selected>Mês</option>
-                  <option>Janeiro</option>
-                  <option>Fevereiro</option>
-                  <option>Março</option>
-                </select>
-                <select class="form-select">
-                  <option selected>Ano</option>
-                  <option>2025</option>
-                  <option>2024</option>
-                  <option>2023</option>
-                </select>
-              </div>
-            </div>
-            <div class="col-md-12">
-              <label class="form-label">Data de término (ou prevista)</label>
-              <div class="d-flex gap-2">
-                <select class="form-select">
-                  <option selected>Mês</option>
-                  <option>Janeiro</option>
-                  <option>Fevereiro</option>
-                  <option>Março</option>
-                </select>
-                <select class="form-select">
-                  <option selected>Ano</option>
-                  <option>2025</option>
-                  <option>2024</option>
-                  <option>2023</option>
-                </select>
-              </div>
-            </div>
-          </div>
-          <div class="mb-3">
-            <label class="form-label">Cursos extracurriculares</label>
-            <input type="text" class="form-control">
-          </div>
-          <div class="mb-3">
-            <label class="form-label">Sobre</label>
-            <textarea class="form-control" rows="3"></textarea>
-          </div>
-          <div class="text-end">
-            <button type="submit" class="btn btn-salvar">Salvar</button>
-          </div>
-        </form>
-      </div>
-
-      <!-- Aba Configuração -->
-      <div class="tab-pane fade" id="config">
-        <form>
-          <!-- Tema -->
-          <div class="mb-3">
-            <label class="form-label d-block">Tema</label>
-            <div class="row">
-              <div class="col-md-6">
-                <div class="input-group custom-radio-input mb-2">
-                    <input type="text" class="form-control" value="Claro" readonly>
-                  <div class="input-group-text">
-                    <input class="form-check-input mt-0" type="radio" name="tema" id="claro" checked>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="input-group custom-radio-input mb-2">
-                    <input type="text" class="form-control" value="Escuro" readonly>
-                  <div class="input-group-text">
-                    <input class="form-check-input mt-0" type="radio" name="tema" id="escuro">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Preferências -->
-          <div class="mb-3">
-            <label class="form-label d-block">Preferências</label>
-            <div class="row">
-              <div class="col-md-6">
-                <div class="input-group custom-radio-input mb-2">
-                  <input type="text" class="form-control" value="Efeitos sonoros" readonly>
-                  <div class="input-group-text">
-                    <input class="form-check-input mt-0" type="checkbox" id="efeitos">
-                  </div>
-                </div>
-
-                <div class="input-group custom-radio-input mb-2">
-                  <input type="text" class="form-control" value="Recomendações de cursos" readonly>
-                  <div class="input-group-text">
-                    <input class="form-check-input mt-0" type="checkbox" id="recomendacoes">
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-6">
-                <div class="input-group custom-radio-input mb-2">
-                    <input type="text" class="form-control" value="Vibração" readonly>
-                  <div class="input-group-text">
-                    <input class="form-check-input mt-0" type="checkbox" id="vibracao">
-                  </div>
-                </div>
-
-                <div class="input-group custom-radio-input mb-2">
-                    <input type="text" class="form-control" value="Notificações diárias" readonly>
-                  <div class="input-group-text">
-                    <input class="form-check-input mt-0" type="checkbox" id="notificacoes">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Idioma -->
-          <div class="mb-3">
-            <label class="form-label">Idioma</label>
-            <select class="form-select">
-              <option selected>Selecionar</option>
-              <option value="pt">Português</option>
-              <option value="en">Inglês</option>
-              <option value="es">Espanhol</option>
-            </select>
-          </div>
-
-          <!-- Suporte -->
-          <div class="mb-3">
-            <label class="form-label">Suporte</label>
-            <div class="input-group mb-2">
-                <input type="text" class="form-control" value="Central de Ajuda" readonly>
-              <span class="input-group-text"><i class="bi bi-headset"></i></span>
-            </div>
-            <div class="input-group">
-              <input type="text" class="form-control" value="Ouvidoria" readonly>
-              <span class="input-group-text"><i class="bi bi-chat-dots"></i></span>
-            </div>
-          </div>
-
-          <!-- Botão -->
-          <div class="text-end">
-            <button type="submit" class="btn btn-salvar">Salvar</button>
-          </div>
-        </form>
-      </div>
-    </main>
-  </div>
+  </main>
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="/js/header.js"></script>
