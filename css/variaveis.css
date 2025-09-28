@@ -11,6 +11,10 @@
   --cor-texto: #000;
   --cor-home: #ff4500;
   --cor-menu-web: #DC4405;
+  --swift-orange2:#f25a1d; 
+  --swift-gray2:#efefef; 
+
+  --band-raise: 40px;
 
   /* Tamanhos */
   --tam-foto: 120px;
@@ -20,6 +24,4 @@
   /* Espaços */
   --espaco-footer: 100px;
 
-  /* Borda Preta */
-  
 }

@@ -105,13 +105,3 @@ function setupHero(){
 renderGrid(rewards);
 bindGridEvents();
 setupHero();
-
-grid.addEventListener('click', (e) => {
-  const fav = e.target.closest('[data-fav]');
-  if (fav){
-    fav.classList.toggle('active');
-    fav.setAttribute('aria-pressed', fav.classList.contains('active'));
-    const icon = fav.querySelector('i');
-    if(icon){ icon.classList.toggle('bi-heart'); icon.classList.toggle('bi-heart-fill'); }
-  }
-});

@@ -14,35 +14,41 @@
 <body>
   <header class="header-spacer swift-header" id="header"></header>
   <main class="container px-3 px-lg-4">
+    <section class="promo-band full-bleed">
+      <div class="band-inner">
+        <div class="banner-box">
+          <div class="band-bg" aria-hidden="true"></div>
 
-    <div class="band-bg" aria-hidden="true">
-      <section class="swift-hero bg-black text-white rounded-bottom pb-4 pb-md-5"
-            data-level="2" data-current="220" data-next-threshold="300">
-      <div class="d-grid gap-3 gap-md-4 py-3">
+          <section class="swift-hero" data-level="2" data-current="220" data-next-threshold="300">
+            <div class="hero-wrap">
+              <img src="/components/img/logo_swift.png" alt="Logo Swift" class="logo-swift" />
 
-        <div class="d-flex justify-content-center justify-content-lg-start">
-          <span class="swift-logo-badge fw-bold px-3 py-2 rounded">Swift</span>
-        </div>
+              <nav class="hero-nav">
+                <button type="button" class="btn btn-link hero-link" data-action="coins">Moedas</button>
+                <button type="button" class="btn btn-link hero-link" data-action="orders">Histórico de Pedidos</button>
+                <div class="hero-progress">
+                <span class="hero-level">Nível <span id="levelNum"></span>:</span>
+                <div class="progress swift-progress">
+                  <div class="progress-bar" id="levelBar" style="width:60%"></div>
+                </div>
+                <span class="hero-hint" id="levelHint">80pts para o próximo nível</span>
+              </div>
+              </nav>
 
-        <nav class="d-flex flex-wrap gap-4 justify-content-center">
-          <button type="button" class="btn btn-link link-light text-decoration-none p-0 fw-semibold" data-action="coins">Moedas</button>
-          <button type="button" class="btn btn-link link-light text-decoration-none p-0 fw-semibold" data-action="orders">Histórico de Pedidos</button>
-        </nav>
+              
+            </div>
+          </section>
 
-        <div class="d-grid gap-2 gap-md-3 align-items-center" style="grid-template-columns:auto 1fr auto;">
-          <div class="fw-semibold">Nível <span id="levelNum">—</span>:</div>
-          <div class="progress swift-progress">
-            <div class="progress-bar bg-white" id="levelBar" style="width:0%"></div>
-          </div>
-          <div class="small opacity-75 text-nowrap" id="levelHint">—</div>
         </div>
       </div>
     </section>
-    </div>
+
+
+
 
 
     <!-- GRID DE RECOMPENSAS -->
-    <section class="py-3 py-md-4">
+    <section class="py-3 py-md-4 mt-2">
     <div id="rewardsGrid"
       class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-xl-5 g-4 g-xl-5"
       aria-live="polite"></div>
