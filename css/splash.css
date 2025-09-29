@@ -1,0 +1,26 @@
+body {
+    background-color: #DC4405;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.logo-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 20vw;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    .logo {
+        width: 50%;
+        height: auto;
+    }
+}

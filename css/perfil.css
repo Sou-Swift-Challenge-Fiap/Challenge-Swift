@@ -1,20 +1,30 @@
-:root {
-      /* Paleta de cores */
-      --cor-primaria: #0d6efd;
-      --cor-primaria-hover: #0b5ed7;
-      --cor-fundo: #ffffff;
-      --cor-borda: #ccc;
-      --cor-texto: #000;
-      --cor-home: #ff4500; /* cor do botão Home no rodapé */
 
-      /* Tamanhos */
-      --tam-foto: 120px;
-      --tam-icone: 1.3rem;
-      --tam-footer-texto: 0.85rem;
+@import url('variaveis.css');
 
-      /* Espaços */
-      --espaco-footer: 100px;
+
+.container{
+  max-width: 100%;
+  padding: 0;
+}
+@media  (max-width: 767px) {
+  .container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border: 10px solid  #DC4405;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);}
+}
+
+.banner_swift {
+      margin: 30px;
+      width: 40%;
+      height: auto;
+      position: relative;
+      z-index: 2;
     }
+
+    
 
     .img-nav{
       width: 24px;
@@ -27,36 +37,11 @@
       height: 21px;
     }
 
-   
-
     .profile-pic {
       width: var(--tam-foto);
       height: var(--tam-foto);
       border-radius: 50%;
       object-fit: cover;
-    }
-
-    /* Rodapé fixo estilo mobile */
-    .footer-nav {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      background: var(--cor-fundo);
-      border-top: 1px solid var(--cor-borda);
-      z-index: 1030;
-      height: 70px;
-    }
-
-    .footer-nav .nav-link {
-      text-align: center;
-      font-size: var(--tam-footer-texto);
-      color: var(--cor-texto);
-    }
-
-    .footer-nav .nav-link i {
-      display: block;
-      font-size: var(--tam-icone);
     }
 
     /* Botão azul salvar */
@@ -70,10 +55,6 @@
       color: #fff;
     }
 
-    /* Espaço extra para não esconder conteúdo atrás do footer */
-    .container-form {
-      margin-bottom: var(--espaco-footer);
-    }
 
     /* Ícone Home destacado */
     .footer-nav .nav-link.home {
@@ -84,35 +65,46 @@
   .nav-link.home {
     display: flex;
     align-items: center;
-    gap: 5px; /* espaço entre imagem e texto */
+    gap: 5px; 
 }
 
 .logo-home {
     width: 24px;
     height: auto;
 }
+.form-control {
+  border: 1px solid #000 !important;
+  border-radius: 8px !important;
+  box-shadow: none !important;
+  resize: none;
+}
+
+.form-select{
+    border: 1px solid #000 !important;
+
+}
 
 .texto-com-imagem {
-      position: relative; /* cria uma área de referência */
-      display: inline-block; /* deixa o texto ocupar só o espaço dele */
+      position: relative; 
+      display: inline-block; 
       top: 35px;
     }
 
     .texto-com-imagem .img-swfit-icon{
-      position: absolute; /* permite jogar a imagem por cima */
-      top: -35px; /* sobe a imagem */
-      left: 50%; /* centraliza na horizontal */
-      transform: translateX(-50%); /* ajusta certinho no meio */
-      width: 50px; /* tamanho da imagem */
+      position: absolute; 
+      top: -35px; 
+      left: 50%; 
+      transform: translateX(-50%); 
+      width: 50px;
       height: auto;
     }
 
     .texto-com-imagem .img-courses-icon{
-      position: absolute; /* permite jogar a imagem por cima */
-      top: -30px; /* sobe a imagem */
-      left: 50%; /* centraliza na horizontal */
-      transform: translateX(-50%); /* ajusta certinho no meio */
-      width: 25px; /* tamanho da imagem */
+      position: absolute;
+      top: -30px; 
+      left: 50%; 
+      transform: translateX(-50%); 
+      width: 25px; 
       height: auto;
     }
 
@@ -125,20 +117,110 @@
       height: auto;
     }
 
-     .texto-com-imagem .img-icon-ranking{
-       position: absolute; /* permite jogar a imagem por cima */
-      top: -30px; /* sobe a imagem */
-      left: 50%; /* centraliza na horizontal */
-      transform: translateX(-50%); /* ajusta certinho no meio */
-      width: 25px; /* tamanho da imagem */
+    .texto-com-imagem .img-icon-ranking{
+       position: absolute; 
+      top: -30px; 
+      left: 50%; 
+      transform: translateX(-50%); 
+      width: 25px;
       height: auto;
     }
 
     .texto-com-imagem .img-icon-recompensas{
-      position: absolute; /* permite jogar a imagem por cima */
-      top: -30px; /* sobe a imagem */
-      left: 50%; /* centraliza na horizontal */
-      transform: translateX(-50%); /* ajusta certinho no meio */
-      width: 25px; /* tamanho da imagem */
+      position: absolute; 
+      top: -30px; 
+      left: 50%; 
+      transform: translateX(-50%);
+      width: 25px; 
       height: auto;
     }
+
+    
+.menu_web{
+  background-color: var(--cor-menu-web);
+}
+
+.banner-container {
+  position: relative; 
+  width: 100%;
+  text-align: center; 
+  z-index: 0;
+}
+
+/* faixa preta atrás do banner */
+.faixa-preta {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0%;                  
+  height: 160px;             
+  background: black;
+  z-index: 1;
+}
+
+/* imagem do banner sempre por cima */
+.banner-img {
+  position: relative;
+  max-width: 100%;   
+  height: auto;      
+  display: inline-block;
+  margin: auto;
+  z-index: 2;
+}
+
+    @media (min-width: 768px) {
+
+
+  .box-profile {
+    margin-top: -60px; 
+  }
+
+  .container-form {
+    background: #f9f9f9;
+    border-radius: 10px;
+    width: 80%;
+    position: relative;
+    left: 10%;
+  }
+
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  /* oculta rodapé fixo no desktop */
+  .footer-nav{
+    display: none;
+  }
+
+}
+
+.input-wrapper {
+  position: relative;
+  width: 40%;
+}
+
+.input-com-icone {
+  padding-right: 40px; /* espaço pro ícone não sobrepor o texto */
+}
+
+.icon-input {
+  position: absolute;
+  right: 10px;   
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;   
+  height: 20px;
+  pointer-events: none; /* não atrapalha o clique no input */
+}
+
+.conteiner {
+  background-color: var(--cor-fundo-card);
+  border-radius: 16px;
+}
+
+.nav-tabs {
+  border-bottom: none !important;
+}

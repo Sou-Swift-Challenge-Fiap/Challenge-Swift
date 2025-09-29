@@ -1,0 +1,10 @@
+header {
+    background-color: #DC4405;
+    display: flex;
+}
+
+.logo img {
+    margin: 2%;
+    width: 4%;
+    height: auto;
+}

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Swift • Recompensas</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <link href="/css/recompensas.css" rel="stylesheet">
+  <link href="/css/header.css" rel="stylesheet">
+</head>
+<body>
+  <header class="header-spacer swift-header" id="header"></header>
+  <main class="">
+    <section class="promo-band full-bleed">
+      <div class="band-inner">
+        <div class="banner-box">
+          <div class="band-bg" aria-hidden="true"></div>
+
+          <section class="swift-hero" data-level="2" data-current="220" data-next-threshold="300">
+            <div class="hero-wrap">
+              <img src="/components/img/logo_swift.png" alt="Logo Swift" class="logo-swift" />
+
+              <nav class="hero-nav">
+                <button type="button" class="btn btn-link hero-link" data-action="coins">Moedas</button>
+                <button type="button" class="btn btn-link hero-link" data-action="orders">Histórico de Pedidos</button>
+                <div class="hero-progress">
+                <span class="hero-level">Nível <span id="levelNum"></span>:</span>
+                <div class="progress swift-progress">
+                  <div class="progress-bar" id="levelBar" style="width:60%"></div>
+                </div>
+                <span class="hero-hint" id="levelHint">80pts para o próximo nível</span>
+              </div>
+              </nav>
+
+              
+            </div>
+          </section>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- GRID DE RECOMPENSAS -->
+    <section class="py-3 py-md-4 mt-3 rewardsGridSection">
+    <div id="rewardsGrid"
+      class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-xl-5 g-4 g-xl-5 grid-fullbleed"
+      aria-live="polite"></div>
+    </section>
+
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/recompensas.js"></script>
+  <script src="/js/header.js"></script>
+</body>
+</html>
