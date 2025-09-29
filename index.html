@@ -1,11 +1,21 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head> 
+  <meta charset="UTF-8">
+  <title>Redirect</title>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+        console.log(navigator.userAgent);
+      if (isMobile) {
+        window.location.href = "../desktop-mobile-componets/mobilecomp.html";
+      } else {
+        window.location.href = "../desktop-mobile-componets/desktopcomp.html";
+      }
+    });
+  </script>
+</head>
 <body>
-    
+  <p>Carregando...</p>
 </body>
 </html>
