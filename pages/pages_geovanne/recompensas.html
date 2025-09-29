@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="pt-br">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -11,6 +12,7 @@
   <link href="/css/recompensas.css" rel="stylesheet">
   <link href="/css/header.css" rel="stylesheet">
 </head>
+
 <body>
   <header class="header-spacer swift-header" id="header"></header>
   <main class="">
@@ -27,15 +29,15 @@
                 <button type="button" class="btn btn-link hero-link" data-action="coins">Moedas</button>
                 <button type="button" class="btn btn-link hero-link" data-action="orders">Histórico de Pedidos</button>
                 <div class="hero-progress">
-                <span class="hero-level">Nível <span id="levelNum"></span>:</span>
-                <div class="progress swift-progress">
-                  <div class="progress-bar" id="levelBar" style="width:60%"></div>
+                  <span class="hero-level">Nível <span id="levelNum"></span>:</span>
+                  <div class="progress swift-progress">
+                    <div class="progress-bar" id="levelBar" style="width:60%"></div>
+                  </div>
+                  <span class="hero-hint" id="levelHint">80pts para o próximo nível</span>
                 </div>
-                <span class="hero-hint" id="levelHint">80pts para o próximo nível</span>
-              </div>
               </nav>
 
-              
+
             </div>
           </section>
 
@@ -45,9 +47,8 @@
 
     <!-- GRID DE RECOMPENSAS -->
     <section class="py-3 py-md-4 mt-3 rewardsGridSection">
-    <div id="rewardsGrid"
-      class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-xl-5 g-4 g-xl-5 grid-fullbleed"
-      aria-live="polite"></div>
+      <div id="rewardsGrid" class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-xl-5 g-4 g-xl-5 grid-fullbleed"
+        aria-live="polite"></div>
     </section>
 
 
@@ -57,4 +58,5 @@
   <script src="/js/recompensas.js"></script>
   <script src="/js/header.js"></script>
 </body>
+
 </html>
