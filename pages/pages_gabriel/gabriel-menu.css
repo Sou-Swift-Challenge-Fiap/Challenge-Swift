@@ -1,0 +1,178 @@
+@import url('variaveis.css');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: clip;
+}
+
+:root { --band-raise: 40px; }
+
+body {
+  background: #fff;
+  color: #1f1f1f;
+}
+
+.header-spacer { height: 56px; }
+.container { background-color: transparent; }
+.page-wrapper {
+  max-width: 960px;
+  margin-inline: auto;
+}
+
+.banner-img { 
+  display: 
+  block; 
+  width: 85%; 
+  height: auto; 
+  max-height: 320px;
+  object-fit: cover;
+}
+
+@media (max-width: 767.98px) {
+  .banner-img { width: 100%; }
+}
+
+.promo-banner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 0 0 #000;
+}
+.promo-banner .banner-img { border-radius: inherit; }
+
+.full-bleed {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
+  overflow: visible;
+}
+@media (max-width: 767.98px) {
+  .container { background-color: var(--cor-menu-web); }
+}
+
+.band-inner {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.banner-box {
+  position: relative;
+  margin: 1rem 0;
+}
+
+@media (max-width: 767.98px) {
+  body { background-color: var(--cor-menu-web); }
+
+  .full-bleed {
+    left: 0;
+    right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    width: auto;
+  }
+
+  .band-inner {
+    max-width: 100%;
+    padding-inline: 12px;
+  }
+
+  .banner-box,
+  .promo-banner { margin: 12px 0; }
+
+  .profile-card,
+  .promo-banner {
+    border: none;
+    box-shadow: none;
+  }
+
+  .band-bg { display: none; }
+}
+
+@media (min-width: 768px) {
+  .logo-swift { height: 56px; }
+
+  .band-bg {
+    display: block;
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    background: #000;
+    top: calc(-1.1 * var(--band-raise));
+    height: calc(50% + var(--band-raise));
+  }
+}
+
+
+@media (min-width: 992px) {
+  .container { padding-top: 1.78rem; }
+}
+
+
+
+@media (min-width: 769px) and (max-width: 990px) {
+  .band-bg {
+    display: none;
+  }
+}
+
+
+ .profile-img {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+    }
+    .progress {
+      height: 6px;
+    }
+    .desafio-card {
+      min-width: 160px;
+      flex: 1;
+    }
+    .ranking-list li {
+      border: none;
+      padding: .5rem 0;
+    }
+    .ranking-list img {
+      width: 35px;
+      height: 35px;
+      object-fit: cover;
+    }
+
+    
+    @media (max-width: 375px) {
+      .profile-img {
+        width: 50px;
+        height: 50px;
+      }
+      .card h6 {
+        font-size: 0.9rem;
+      }
+      .card small {
+        font-size: 0.75rem;
+      }
+      .desafio-card {
+        flex: 100%;
+        min-width: auto;
+      }
+      .desafio-card small {
+        font-size: 0.75rem;
+      }
+      .ranking-list li {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .ranking-list small {
+        margin-top: 2px;
+      }
+    }
+  
+   
