@@ -2,11 +2,13 @@
     --cor-cinza:#f9f9f9;
  }
 
+ 
+
  .container{
     max-width: 1200px;
     margin: auto;
     padding: 20px;
-    background-color: white;
+    background-color: ;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
  }
@@ -158,3 +160,10 @@
           grid-template-columns: repeat(2, 1fr);
         }
  }
+
+ @media (max-width: 901px) {
+       body{
+    background-color: #DC4405;
+ }
+      }
+

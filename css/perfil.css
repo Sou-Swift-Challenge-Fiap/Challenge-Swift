@@ -1,6 +1,7 @@
 
-
 @import url('variaveis.css');
+
+
 .container{
   max-width: 100%;
   padding: 0;
@@ -11,7 +12,7 @@
     margin: auto;
     padding: 20px;
     background-color: white;
-    border-radius: 10px;
+    border: 10px solid  #DC4405;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);}
 }
 
@@ -117,19 +118,19 @@
     }
 
     .texto-com-imagem .img-icon-ranking{
-       position: absolute; /* permite jogar a imagem por cima */
-      top: -30px; /* sobe a imagem */
-      left: 50%; /* centraliza na horizontal */
-      transform: translateX(-50%); /* ajusta certinho no meio */
-      width: 25px; /* tamanho da imagem */
+       position: absolute; 
+      top: -30px; 
+      left: 50%; 
+      transform: translateX(-50%); 
+      width: 25px;
       height: auto;
     }
 
     .texto-com-imagem .img-icon-recompensas{
-      position: absolute; /* permite jogar a imagem por cima */
-      top: -30px; /* sobe a imagem */
-      left: 50%; /* centraliza na horizontal */
-      transform: translateX(-50%); /* ajusta certinho no meio */
+      position: absolute; 
+      top: -30px; 
+      left: 50%; 
+      transform: translateX(-50%);
       width: 25px; 
       height: auto;
     }
