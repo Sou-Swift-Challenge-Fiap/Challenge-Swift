@@ -1,0 +1,208 @@
+.top-black-header {
+    width: 100%;
+    max-width: 1912px;
+    background-color: black;
+    color: var(--color-text-primary);
+    padding: 40px 20px 20px;
+    height: 140px;
+    text-align: center;
+    
+}
+
+.header-text {
+    color: white;
+}
+
+.progress-container {
+    width: 100%;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 4.5px;
+    transition: width 0.3s ease;
+   
+}
+
+.progress-container::after {
+    width: 80%;
+    display: flex;
+    content: "";
+    background-color: #DC4405;
+    height: 4.5px;
+}
+
+/* Configurações básicas e tipografia */
+body {
+   
+}
+
+.container {
+    max-width: 1200px;
+    /* Largura máxima do conteúdo */
+    width: 95%;
+    /* Garante que o container ocupe quase toda a largura em telas menores */
+    margin: 40px auto;
+    /* Centraliza e adiciona margem superior/inferior */
+    padding: 20px;
+    background-color: white;
+    /* Fundo branco para a área principal */
+    border-radius: 8px;
+    /* Borda suave para simular o container da imagem */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.header-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    letter-spacing: 2px;
+}
+
+/* Layout de Grid dos Cards */
+.cards-grid {
+    display: grid;
+    /* Por padrão, em telas pequenas (mobile first), uma coluna */
+    grid-template-columns: 1fr;
+    gap: 20px;
+    /* Espaço entre os cards */
+    padding: 0 10px;
+    /* Preenchimento lateral para respeitar as 'bordas' internas */
+}
+
+/* Estilo individual do Card */
+.card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    /* Garante que a imagem respeite as bordas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    /* Efeito sutil ao passar o mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Área da Imagem do Card */
+.card-image {
+    overflow: hidden;
+    /* defina a altura desejada */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card-image img {
+    width: 100%;
+    /* Faz a imagem ocupar 100% da largura da div */
+    height: 100%;
+    /* Faz a imagem ocupar 100% da altura da div */
+
+    /* COMANDO PRINCIPAL: Redimensiona a imagem para cobrir a área */
+    object-fit: cover;
+
+    /* Opcional: Centraliza a parte visível da imagem */
+    object-position: center;
+}
+
+/* Simulando as imagens de fundo com as URLs */
+.card:nth-child(1) .card-image {
+    /* Imagem 1: Mulher no caixa */
+    background-image: url('https://i.imgur.com/example1.jpg');
+}
+
+.card:nth-child(2) .card-image {
+    /* Imagem 2: Máquina de cartão */
+    background-image: url('https://i.imgur.com/example2.jpg');
+    background-position: top;
+    /* Ajuste para o corte da imagem da máquina de cartão */
+}
+
+/* Estilo do Conteúdo e Rodapé */
+
+
+.card-title {
+    margin: 0;
+    font-size: 0.9em;
+    color: #333;
+    font-weight: 600;
+}
+
+
+
+.progress {
+    font-size: 0.8em;
+    color: #007bff;
+    /* Cor para o progresso */
+}
+
+.bookmark-icon {
+    /* Simulação de um ícone de salvar (bandeira) */
+    width: 15px;
+    height: 15px;
+    border: 1px solid #ccc;
+    border-width: 0 1px 1px 1px;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 75%, 0 100%);
+    background-color: #ccc;
+}
+
+/* Paginação (Dots) */
+.pagination {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.dot {
+    height: 8px;
+    width: 8px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 4px;
+}
+
+.dot.active {
+    background-color: #666;
+    /* Ponto ativo mais escuro */
+}
+
+/* --- Responsividade (Media Queries) --- */
+
+/* Telas maiores que 600px (Ex: a partir de tablets) */
+@media (min-width: 600px) {
+    .cards-grid {
+        /* Muda para 2 colunas de largura igual */
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        padding: 0 20px;
+    }
+}
+
+/* Telas maiores que 992px (Ex: a partir de desktops) */
+@media (min-width: 992px) {
+    .cards-grid {
+        /* Muda para 3 colunas de largura igual, conforme a imagem de referência */
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        padding: 0;
+        /* Remove o padding lateral em telas grandes se o container já o tiver */
+    }
+}
+
+/* Garante que o card ocupe 100% da largura do grid em todas as visualizações */
+.card {
+    width: 100%;
+}
+
+@media (max-width: 900px) {
+    body {background-color: #DC4405;
+}
+    .top-black-vanish {
+        display: none;
+    }
+}
