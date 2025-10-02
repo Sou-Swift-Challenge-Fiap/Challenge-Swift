@@ -307,13 +307,12 @@ body {
   }
 }
 
-/* FIX iPad / tablets (md) — corrige sumiço do grid ao neutralizar o full-bleed */
 @media (min-width: 768px) and (max-width: 991.98px) {
 
   .grid-fullbleed{
-    position: relative;  /* mantém como estava */
+    position: relative; 
     left: auto;
-    right: auto;         /* <-- ESSENCIAL: zera o right herdado (antes estava 100%) */
+    right: auto;
     margin-left: 0;
     margin-right: 0;
     width: 100%;
@@ -322,7 +321,6 @@ body {
     padding-right: 0.75rem;
   }
 
-  /* Layout de 3 colunas no md (opcional, mantém respiro) */
   #rewardsGrid {
     --bs-gutter-x: 0.75rem;
     --bs-gutter-y: 0.75rem;
@@ -333,7 +331,6 @@ body {
     max-width: 33.333333%;
   }
 
-  /* Cards sem limite estreito no md */
   #rewardsGrid .swift-card{
     max-width: 100%;
   }
