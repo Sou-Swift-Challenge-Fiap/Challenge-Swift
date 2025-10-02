@@ -200,10 +200,6 @@ body {
     border: none;
     box-shadow: none;
   }
-
-  .band-bg {
-    display: none;
-  }
 }
 
 @media (min-width: 768px) {
@@ -212,14 +208,13 @@ body {
   }
 
   .band-bg {
-    display: block;
     position: absolute;
     z-index: 0;
     left: 50%;
     transform: translateX(-50%);
     width: 100vw;
     background: #000;
-    top: calc(-1.1 * var(--band-raise));
+    top: calc(-1.15 * var(--band-raise));
     height: calc(50% + var(--band-raise));
   }
 }
