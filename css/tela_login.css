@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Sansation", sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100vw;
+    height: 80px;
+    background-color: #DC4405;
+    top: 0;
+    left: 0;
+}
+
+@media (max-width: 800px) {
+    header {
+        display: none;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+    position: relative;
+}
+
+
+.img_logo {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: auto;
+}
+
+@media (max-width: 800px) {
+    .img_logo {
+        width: 80%;
+        max-width: 300px;
+        margin-bottom: 20px;
+    }
+    
+}
+
+
+.social_medias {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.social_medias a img {
+    width: 30px;
+    height: auto;
+    transition: transform 0.2s;
+}
+
+.social_medias a img:hover {
+    transform: scale(1.2);
+}
+
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 220px;
+}
+
+.buttons button {
+    font-size: 18px;
+    font-weight: 700;
+    padding: 3px;
+    border-radius: 30px;
+    border: 2px solid #DC4405;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.35);
+}
+
+
+button.login {
+    background-color: #DC4405;
+    color: white;
+}
+
+button.login:hover {
+    background-color: #b73704;
+    border: solid black 1px;
+}
+
+button.sign_in {
+    background-color: white;
+    color: #DC4405;
+    border: solid black 1px;
+}
+
+button.sign_in:hover {
+    background-color: #f5f5f5;
+}
