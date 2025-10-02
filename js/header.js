@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("../ale_pages/header.html")
+  fetch("../pages/header.html")
     .then(response => {
       if (!response.ok) {
         throw new Error("Erro ao carregar o header: " + response.status);
@@ -18,4 +18,9 @@ document.addEventListener("DOMContentLoaded", () => {
 function toggleMenu() {
     document.getElementById("sidebar").classList.toggle("active");
     document.getElementById("overlay").classList.toggle("active");
+}
+
+
+function goToHome() {
+  window.location.href = "home.html"
 }

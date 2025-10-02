@@ -16,11 +16,17 @@
         <form class="form_login">
           <input type="email" placeholder="Digite seu email" required>
           <input type="password" placeholder="Digite sua senha" required>
-          <button type="submit" class="btn_login">Entrar</button>
+          <button type="submit" class="btn_login" onclick="goToHome()">Entrar</button>
         </form>
       </div>
     </div>
   </main>
+
+  <script>
+      function goToHome() {
+          window.location.href = "home.html";
+      }
+  </script>
 </body>
 </html>
 
