@@ -1,17 +1,22 @@
 
-
 @import url('variaveis.css');
+
+
 .container{
   max-width: 100%;
   padding: 0;
 }
-@media  (max-width: 767px) {
-  .container{
+@media screen and (max-width: 901px) {
+  .banner-container {
+  display: none; 
+  }
+
+   .container{
     max-width: 1200px;
     margin: auto;
     padding: 20px;
     background-color: white;
-    border-radius: 10px;
+    border: 10px solid  #DC4405;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);}
 }
 
@@ -108,28 +113,28 @@
     }
 
     .texto-com-imagem .img-icon-desafios{
-      position: absolute; /* permite jogar a imagem por cima */
-      top: -30px; /* sobe a imagem */
-      left: 50%; /* centraliza na horizontal */
-      transform: translateX(-50%); /* ajusta certinho no meio */
-      width: 25px; /* tamanho da imagem */
+      position: absolute; 
+      top: -30px;
+      left: 50%;
+      transform: translateX(-50%); 
+      width: 25px; 
       height: auto;
     }
 
     .texto-com-imagem .img-icon-ranking{
-       position: absolute; /* permite jogar a imagem por cima */
-      top: -30px; /* sobe a imagem */
-      left: 50%; /* centraliza na horizontal */
-      transform: translateX(-50%); /* ajusta certinho no meio */
-      width: 25px; /* tamanho da imagem */
+       position: absolute; 
+      top: -30px; 
+      left: 50%; 
+      transform: translateX(-50%); 
+      width: 25px;
       height: auto;
     }
 
     .texto-com-imagem .img-icon-recompensas{
-      position: absolute; /* permite jogar a imagem por cima */
-      top: -30px; /* sobe a imagem */
-      left: 50%; /* centraliza na horizontal */
-      transform: translateX(-50%); /* ajusta certinho no meio */
+      position: absolute; 
+      top: -30px; 
+      left: 50%; 
+      transform: translateX(-50%);
       width: 25px; 
       height: auto;
     }
@@ -146,7 +151,9 @@
   z-index: 0;
 }
 
-/* faixa preta atrás do banner */
+ 
+  
+
 .faixa-preta {
   position: absolute;
   left: 0;
@@ -157,7 +164,6 @@
   z-index: 1;
 }
 
-/* imagem do banner sempre por cima */
 .banner-img {
   position: relative;
   max-width: 100%;   
@@ -189,7 +195,6 @@
     object-fit: cover;
   }
 
-  /* oculta rodapé fixo no desktop */
   .footer-nav{
     display: none;
   }
@@ -202,7 +207,7 @@
 }
 
 .input-com-icone {
-  padding-right: 40px; /* espaço pro ícone não sobrepor o texto */
+  padding-right: 40px; 
 }
 
 .icon-input {
@@ -212,7 +217,7 @@
   transform: translateY(-50%);
   width: 20px;   
   height: 20px;
-  pointer-events: none; /* não atrapalha o clique no input */
+  pointer-events: none; 
 }
 
 .conteiner {
