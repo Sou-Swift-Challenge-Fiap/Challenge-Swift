@@ -7,6 +7,26 @@ body {
   overflow-x: clip;
 }
 
+.faixa-preta {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0%;                  
+  height: 160px;             
+  background: black;
+  z-index: 1;
+}
+
+.banner_swift {
+  max-height: 320px;
+  object-fit: cover;
+  width: 650px;
+  height: auto;
+  display: inline-block;
+  z-index: 2;
+  position: relative;
+}
+
 :root {
   --band-raise: 40px;
 }
@@ -41,22 +61,6 @@ body {
   border: 0;
   border-top: 1px solid #000;
   margin: 1rem 0 1.5rem;
-}
-
-.borda-preta {
-  border: 1px solid #000 !important;
-  border-radius: 8px !important;
-  box-shadow: none !important;
-  resize: none;
-}
-
-.banner-img { 
-  display: 
-  block; 
-  width: 85%; 
-  height: auto; 
-  max-height: 320px;
-  object-fit: cover;
 }
 
 @media (max-width: 767.98px) {

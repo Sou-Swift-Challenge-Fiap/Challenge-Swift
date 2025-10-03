@@ -15,27 +15,21 @@
     <main>
         <div class="container">
             <img class="img_logo" src="/./components/img/desafie_swift.png" alt="">
+
             <div class="social_medias">
-                <a href="#"><img src="/./components/icons/logo-google.svg" alt=""></a>
+                <a href="#"><img src="/./components/icons/logo-google.svg" alt="" class="google_btn"></a>
                 <a href="#"><img src="/./components/icons/logo-facebook.svg" alt=""></a>
                 <a href="#"><img src="/./components/icons/logo_apple.png" alt=""></a>
             </div>
+
             <div class="buttons">
-                <button class="login" onclick="goToLogin()">Login</button>
-                <button class="sign_in" onclick="goToCadastro()">Criar conta</button>
+                <button class="login" onclick="goTo('login')">Login</button>
+                <button class="sign_in" onclick="goTo('cadastro')">Criar conta</button>
             </div>
         </div>
     </main>
-    
-    <script>
-        function goToLogin() {
-            window.location.href = "login.html";
-        }
 
-        function goToCadastro() {
-            window.location.href = "cadastro.html"
-        }
-    </script>
+    <script src="../js/header.js"></script>
 </body>
 
 </html>

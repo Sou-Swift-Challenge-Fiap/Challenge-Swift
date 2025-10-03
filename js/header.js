@@ -20,11 +20,17 @@ function toggleMenu() {
     document.getElementById("overlay").classList.toggle("active");
 }
 
-
-function goToHome() {
-  window.location.href = "home.html"
+function goTo(page) {
+  window.location.href = `${page}.html`;
 }
 
-function goToEditProfile() {
-  window.location.href = "editar_perfil.html"
-}
+document.addEventListener("DOMContentLoaded", () => {
+  const bannerContainer = document.getElementById("banner");
+  
+  fetch("../pages/banner.html") 
+    .then(response => response.text())
+    .then(data => {
+      bannerContainer.innerHTML = data;
+    })
+    .catch(error => console.error("Erro ao carregar o banner:", error));
+});

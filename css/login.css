@@ -8,10 +8,13 @@
 }
 
 /* Barra superior */
+
 header {
-  width: 100vw;
-  height: 40px;
-  background-color: #DC4405;
+    width: 100vw;
+    height: 50px;
+    background-color: #DC4405;
+    top: 0;
+    left: 0;
 }
 
 /* Container geral */
@@ -19,13 +22,14 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 200px;
   position: relative;
 }
 
 /* Logo padrão */
 .img_logo {
-  width: 350px;
+  width: 330px;
+  height: auto;
   margin-bottom: 30px;
   z-index: 2;
   transition: filter 0.3s ease, opacity 0.3s ease;
@@ -86,21 +90,18 @@ header {
   background-color: #b73704;
 }
 
-/* ===================== */
 /*       MOBILE          */
-/* ===================== */
 @media (max-width: 768px) {
   header {
     display: none;
   }
 
   .container {
-    margin-top: 60px;
+    margin-top: 200px;
   }
 
   .img_logo {
-    width: 150px;
-    margin-bottom: 20px;
+    width: 250px;
 
     /* Escurece junto com o fundo */
     filter: brightness(0.6);
@@ -127,7 +128,7 @@ header {
     width: 100%;
     max-width: 500px;
     margin: 0 auto;
-    padding: 30px 20px;
+    padding: 60px 60px;
     box-shadow: 0px -4px 12px rgba(0, 0, 0, 0.4);
 
     /* Animação */

@@ -6,6 +6,7 @@
   max-width: 100%;
   padding: 0;
 }
+
 @media screen and (max-width: 901px) {
   .banner-container {
   display: none; 
@@ -20,32 +21,32 @@
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);}
 }
 
+.faixa-preta {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0%;                  
+  height: 160px;             
+  background: black;
+  z-index: 1;
+}
+
 .banner_swift {
-      margin: 30px;
-      width: 40%;
-      height: auto;
-      position: relative;
-      z-index: 2;
-    }
+  max-height: 320px;
+  object-fit: cover;
+  margin-top: 15px;
+  width: 650px;
+  height: auto;
+  display: inline-block;
+  z-index: 2;
+  position: relative;
+}
 
-    
-
-    .img-nav{
-      width: 24px;
-      height: 24px;
-    }
-
-      .img-nav-profile{
-      top: 20px;  
-      width: 20px;
-      height: 21px;
-    }
-
-    .profile-pic {
-      width: var(--tam-foto);
-      height: var(--tam-foto);
-      border-radius: 50%;
-      object-fit: cover;
+.profile-pic {
+  width: var(--tam-foto);
+  height: var(--tam-foto);
+  border-radius: 50%;
+  object-fit: cover;
     }
 
     /* Botão azul salvar */
@@ -151,31 +152,7 @@
   z-index: 0;
 }
 
- 
-  
-
-.faixa-preta {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0%;                  
-  height: 160px;             
-  background: black;
-  z-index: 1;
-}
-
-.banner-img {
-  position: relative;
-  max-width: 100%;   
-  height: auto;      
-  display: inline-block;
-  margin: auto;
-  z-index: 2;
-}
-
-    @media (min-width: 768px) {
-
-
+@media (min-width: 768px) {
   .box-profile {
     margin-top: -60px; 
   }

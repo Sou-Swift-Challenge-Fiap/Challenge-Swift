@@ -10,7 +10,7 @@
   <!-- Menu superior -->
   <header class="top-header">
     <section class="logo">
-      <img src="/./components/img/logo_swift.png" alt="Logo" onclick="goToHome()">
+      <img src="/./components/img/logo_swift.png" alt="Logo" onclick="goTo('home')">
     </section>
 
     <section class="search">
@@ -20,14 +20,13 @@
 
     <section class="buttons">
         <ul>
-        <li><a href="../pages/cursos.html"><img src="/./components/icons/courses_button2.png" alt="">Cursos</a></li>
-        <li><a href="../pages/desafios.html"><img src="/./components/icons/challenge_icon2.png" alt="">Desafios</a></li>
-        <li><a href="./pontuacoes.html"><img src="/./components/icons/ranking_icon2.png" alt="">Ranking</a></li>
-        <li><a href="../pages/recompensas.html"><img src="/./components/icons/rewards_button - Copia2.png" alt="">Recompensas</a></li>
-        <li><a href="#"><img src="/./components/icons/notifications-outline2.png" alt="">Notificações</a></li>
-        <li><a href="../pages/perfil.html"><img src="/./components/icons/profile_icon2.svg" alt="">Perfil</a></li>
-        <li><a href="../pages/equipe.html"><img src="/./components/icons/team_icon2.png" alt="">Equipe</a></li>
-        <li><a href="#"><img src="/./components/icons/setting_icon2.svg" alt="">Configurações</a></li>
+        <li onclick="goTo('cursos')"><img src="/./components/icons/courses_button2.png" alt="">Cursos</li>
+        <li onclick="goTo('desafios')"><img src="/./components/icons/challenge_icon2.png" alt="">Desafios</li>
+        <li onclick="goTo('ranking')"><img src="/./components/icons/ranking_icon2.png" alt="">Ranking</li>
+        <li onclick="goTo('recompensas')"><img src="/./components/icons/rewards_button - Copia2.png" alt="">Recompensas</li>
+        <li onclick="goTo('perfil')"><img src="/./components/icons/profile_icon2.svg" alt="">Perfil</li>
+        <li onclick="goTo('equipe')"><img src="/./components/icons/team_icon2.png" alt="">Equipe</li>
+        <li><img src="/./components/icons/notifications-outline2.png" alt="">Notificações</li>
         </ul>
     </section>
   </header>
@@ -46,24 +45,21 @@
     <!-- Ícones do lado direito -->
     <div class="right-icons">
       <a href="#"><img src="/./components/icons/notifications-outline.svg" class="img_notifications" alt=""></a>
-      <a href="#"><img src="/./components/icons/information-circle-outline.svg" alt="" class="info"></a>
-      <a href="../pages/perfil.html"><img src="/./components/img/woman1_profile_pic.jpg" class="profile_pic" alt=""></a>
-      <a href="../pages/perfil.html" class="arrow">▼</a>
+      <a href="#" onclick="goTo('perfil')"><img src="/./components/img/woman1_profile_pic.jpg" class="profile_pic" alt=""></a>
+      <a href="#" class="arrow" onclick="goTo('perfil')">▼</a>
     </div>
   </header>
 
   <!-- Menu lateral oculto -->
   <nav id="sidebar" class="sidebar">
       <ul>
-          <li><a href="../pages/home.html">Início</a></li>
-          <li><a href="../pages/cursos.html">Cursos</a></li>
-          <li><a href="../pages/pontuacoes.html">Ranking</a></li>
-          <li><a href="../pages/recompensas.html">Recompensas</a></li>
-          <li><a href="../pages/desafios.html">Desafios</a></li>
-          <li><a href="../pages/perfil.html">Perfil</a></li>
-          <li><a href="#">Notificações</a></li>
-          <li><a href="../pages/equipe.html">Minha equipe</a></li>
-          <li><a href="#">Configurações</a></li>
+          <li ><a href="#" onclick="goTo('home')">Início</a></li>
+          <li><a href="#" onclick="goTo('cursos')">Cursos</a></li>
+          <li><a href="#" onclick="goTo('ranking')">Ranking</a></li>
+          <li><a href="#" onclick="goTo('recompensas')">Recompensas</a></li>
+          <li><a href="#" onclick="goTo('desafios')">Desafios</a></li>
+          <li><a href="#" onclick="goTo('perfil')">Perfil</a></li>
+          <li><a href="#" onclick="goTo('equipe')">Minha equipe</a></li>
       </ul>
   </nav>
 
@@ -71,14 +67,23 @@
   <div id="overlay" class="overlay" onclick="toggleMenu()"></div>
 
 
-  <!-- Menu inferior -->
+  <!-- Footer_Mobile -->
   <nav class="bottom-nav">
     <ul>
-      <li><img src="/./components/icons/courses_button.png" alt=""><a href="../pages/cursos.html">Cursos</a></li>
-      <li><img src="/./components/icons/challenge_icon.png" alt=""><a href="../pages/desafios.html">Desafios</a></li>
-      <li class="home-btn"><img src="/./components/img/logo_swift.png" alt=""><a href="../pages/home.html">Home</a></li>
-      <li><img src="/./components/icons/ranking_icon.png" alt=""><a href="../pages/pontuacoes.html">Ranking</a></li>
-      <li><img src="/./components/icons/rewards_button - Copia.png" alt=""><a href="../pages/recompensas.html">Recompensas</a></li>
+      <li onclick="goTo('cursos')">
+        <img src="/./components/icons/courses_button.png" alt="">Cursos</li>
+
+      <li onclick="goTo('desafios')">
+        <img src="/./components/icons/challenge_icon.png" alt="">Desafios</li>
+
+      <li class="home-btn" onclick="goTo('home')">
+        <img src="/./components/img/logo_swift.png" alt="">Home</li>
+
+      <li onclick="goTo('ranking')">
+        <img src="/./components/icons/ranking_icon.png" alt="">Ranking</li>
+      
+      <li onclick="goTo('recompensas')">
+        <img src="/./components/icons/rewards_button - Copia.png" alt="">Recompensas</li>
     </ul>
   </nav>
 

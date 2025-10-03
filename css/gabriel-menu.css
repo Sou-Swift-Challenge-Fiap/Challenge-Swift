@@ -20,6 +20,12 @@ body {
   height: 56px;
 }
 
+@media (max-width: 767.98px) {
+  .banner-img {
+    width: 100%;
+  }
+}
+
 .container {
   background-color: transparent;
 }
@@ -27,21 +33,6 @@ body {
 .page-wrapper {
   max-width: 960px;
   margin-inline: auto;
-}
-
-.banner-img {
-  display:
-    block;
-  width: 85%;
-  height: auto;
-  max-height: 320px;
-  object-fit: cover;
-}
-
-@media (max-width: 767.98px) {
-  .banner-img {
-    width: 100%;
-  }
 }
 
 .promo-banner {
@@ -52,6 +43,15 @@ body {
   border-radius: 4px;
   overflow: hidden;
   box-shadow: 0 0 0 #000;
+}
+
+.banner-img {
+  display:block;
+  width: 70%;
+  height: auto;
+  max-height: 320px;
+  object-fit: cover;
+  margin-top: 10px;
 }
 
 .promo-banner .banner-img {
