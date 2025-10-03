@@ -173,3 +173,9 @@
     background-color: var(--cor-menu-web) !important;
   }
 }
+
+@media (min-width: 900px) {
+  .bg-light {
+    background-color: white !important;
+  }
+}
