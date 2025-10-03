@@ -175,7 +175,7 @@ body {
   border-radius: 6px;
   padding: 15px;
   width: 300px;
-  
+
   text-align: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   flex-shrink: 0;
@@ -186,7 +186,7 @@ body {
   align-items: center;
   gap: 10px;
   justify-content: center;
- 
+
 }
 
 .text-info {
@@ -272,7 +272,7 @@ body {
   font-size: 40px;
   margin-bottom: 15px;
   line-height: 1;
- 
+
 }
 
 
@@ -281,9 +281,10 @@ body {
   color: #333;
   line-height: 1.4;
   max-width: 90%;
-  
+
 }
-@media  (max-width: 482px ){
+
+@media (max-width: 482px) {
   .cards-container-middle {
     flex-wrap: wrap;
     display: flex;
@@ -312,7 +313,7 @@ body {
 .dashboard-container {
   display: flex;
   gap: 20px;
-  
+
   align-items: stretch;
   justify-content: center;
   padding: 20px;
@@ -329,7 +330,7 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
- 
+
 }
 
 
@@ -388,7 +389,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   width: calc(100% - 40px);
-  
+
   margin-top: 20px;
 }
 
@@ -453,8 +454,8 @@ body {
   justify-content: space-between;
   gap: 15px;
   margin-top: 10px;
- 
-  
+
+
 }
 
 .reward-item {
@@ -497,7 +498,7 @@ body {
 
   .btn-bottom {
     position: relative;
- 
+
     margin: 20px auto 0 auto;
     width: 100%;
     transform: none;
@@ -514,6 +515,7 @@ body {
   .rewards-grid {
     flex-direction: column;
   }
+
   .reward-item {
     width: 100%;
   }
@@ -527,14 +529,14 @@ body {
 
 @media (max-width: 899px) {
   .borda-mobile {
-      background-color: #EDEDED;
-      border-radius: 16px;
-      margin: 16px;
-      padding-top: 10px;
-      padding-bottom: 100px;
-    }
+    background-color: #EDEDED;
+    border-radius: 16px;
+    margin: 16px;
+    padding-top: 10px;
+    padding-bottom: 100px;
+  }
 }
 
 .team-box {
-  height: 410px;
+  height: 450px;
 }
