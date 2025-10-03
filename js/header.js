@@ -24,3 +24,7 @@ function toggleMenu() {
 function goToHome() {
   window.location.href = "home.html"
 }
+
+function goToEditProfile() {
+  window.location.href = "editar_perfil.html"
+}
