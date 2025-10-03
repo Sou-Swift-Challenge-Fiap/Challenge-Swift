@@ -531,7 +531,7 @@ body {
   .borda-mobile {
     background-color: #EDEDED;
     border-radius: 16px;
-    margin: 16px;
+    margin: 10px;
     padding-top: 10px;
     padding-bottom: 100px;
   }

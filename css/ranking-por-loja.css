@@ -1,3 +1,5 @@
+@import url('variaveis.css');
+
 :root {
   --line: #d6d6d6;
   --accent: #ff7a3d;
@@ -72,7 +74,6 @@
 
 /* Perfil: card no mobile; limpo no desktop */
 .profile {
-  background: #fff;
   border: 1px solid #000;
   border-radius: 12px;
 }
@@ -158,10 +159,17 @@
   }
 }
 
-@media (max-width:768px) {
+@media (max-width:900px) {
   .container-imagens {
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
+    margin-left: 2px;
+    margin-right: 2px;
+    border-radius: 10px;
   }
 }
 
-
+@media (max-width: 900px) {
+  .orange-mobile {
+    background-color: var(--cor-menu-web) !important;
+  }
+}
